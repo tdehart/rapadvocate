@@ -2,13 +2,19 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "bootstrap-3": {}
+      "bootstrap-3": {},
+      "underscore-string-latest": {}
     },
     "packages": {
       "bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
         "tag": "v0.3.5",
         "commit": "47996f67f3987c9f82117394effcbe1586a4fe29"
+      },
+      "underscore-string-latest": {
+        "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
+        "tag": "v2.3.3",
+        "commit": "4a5d70eee48fbd90a6e6fc78747250d704a0b3bb"
       }
     }
   }

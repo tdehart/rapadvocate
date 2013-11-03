@@ -1,21 +1,17 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
+<template name="artists">
+  <h2>Artists</h2>
 
-  <title>Navbar Template for Bootstrap</title>
-
-</head>
-
-<body>
-
-  <div class="container">
-    <h1>RapAdvocate</h1>
-    <div>
-      <h2>Artists</h2>
-      {{> artistsTemplate}}
+  <form class="new-artist">
+    <div class="form-group">
+      <input type="text" class="form-control" id="new-artist-input" placeholder="Enter artist name">
     </div>
-  </div>
-</body>
+  </form>
+
+  <ul>
+  {{#each artists}}
+    <li>
+      {{stageName}}
+    </li>
+  {{/each}}
+  </ul>
+</template>
