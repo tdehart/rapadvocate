@@ -8,10 +8,24 @@
   </form>
 
   <ul>
-  {{#each artists}}
-    <li>
-      {{stageName}}
-    </li>
-  {{/each}}
+  {{#isolate}}
+    {{#each artists}}
+      {{> artist}}
+    {{/each}}
+  {{/isolate}}
   </ul>
+</template>
+
+<template name="artist">
+  <li>
+    <a href="{{pathFor 'artistShow'}}">
+      {{stageName}}
+    </a>
+  </li>
+</template>
+
+<template name="artistShow">
+  <p>
+    {{stageName}}
+  </p>
 </template>

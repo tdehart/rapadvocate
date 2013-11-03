@@ -33,6 +33,7 @@ Artists = new Meteor.Collection("artists");
 
 // Use Meteor.methods for db operations
 Meteor.methods({
+
   addArtist: function(artist) {
     if (artist.stageName === "") {
       throw new Meteor.Error(403, "Stage name required");

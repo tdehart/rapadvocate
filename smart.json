@@ -1,6 +1,7 @@
 {
   "packages": {
     "bootstrap-3": {},
-    "underscore-string-latest": {}
+    "underscore-string-latest": {},
+    "iron-router": {}
   }
 }
