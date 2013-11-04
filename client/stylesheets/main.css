@@ -6,3 +6,12 @@ body {
 .new-artist {
   width: 500px;
 }
+
+.delete-button {
+  margin-left: 450px;
+}
+
+.form-horizontal .control-label {
+  padding-right: 0;
+  text-align: left;
+}

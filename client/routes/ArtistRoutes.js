@@ -24,11 +24,11 @@ ArtistShowController = RouteController.extend({
   after: function () {},
 
   waitOn: function () {
-    return Meteor.subscribe('artists', this.params._id);
+    return Meteor.subscribe('artists', this.params.stageName);
   },
 
   data: function () {
-    return Artists.findOne({_id: this.params._id});
+    return Artists.findOne({stageName: this.params.stageName});
   }
 });
 
@@ -45,7 +45,7 @@ Router.map(function() {
   });
 
   this.route('artistShow', {
-    path: '/artist/:_id',
+    path: '/artist/:stageName',
     controller: ArtistShowController
   });
 

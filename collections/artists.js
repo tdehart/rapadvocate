@@ -2,9 +2,8 @@
 // { 
 //   _id: "4f297e550b3e6d9e2b7aa58e",
 //   stageName: "Kendrick Lamar",
-//   otherNames: ["K. Dot", "King Kendrick"],
 //   realName: "Kendrick Lamar Duckworth",
-//   birthDate: 1329126719,
+//   birthdate: 1329126719,
 //   birthplace: "Compton, California",
 //   website: "http://www.kendricklamar.com/",
 //   tags: ["west coast", "ya bish"],
@@ -37,8 +36,15 @@ Meteor.methods({
   addArtist: function(artist) {
     if (artist.stageName === "") {
       throw new Meteor.Error(403, "Stage name required");
+    } else if (Artists.find({stageName: artist.stageName}).count() > 0) {
+      throw new Meteor.Error(403, "Duplicate artist");
     }
 
     return Artists.insert(artist);
+  },
+
+  updateArtist: function(artist) {
+    var artistObject = Artists.findOne({stageName: artist.stageName});
+    return Artists.update(artistObject, artist);
   }
 });
