@@ -5,7 +5,8 @@ Template.artists.events({
     var stageName = tmpl.find("#new-artist-input");
 
     var newArtist = {
-      stageName: _.str.trim(stageName.value)
+      stageName: _.str.trim(stageName.value),
+      cleanUrlName: _.str.trim(stageName.value.toLowerCase()).split(' ').join('-')
     };
 
     Meteor.call("addArtist", newArtist, function(err, result) {
@@ -15,27 +16,39 @@ Template.artists.events({
 
       $(stageName).val('');
     });
-  }
+  },
 });
 
 Template.artistShow.events({
+  'click .edit-button': function(evt, tmpl) {
+    evt.preventDefault();
+
+    Router.go('artistEdit', {cleanUrlName: this.cleanUrlName});
+  }
+});
+
+Template.artistEdit.events({
   'click .cancel-button': function(evt, tmpl) {
     evt.preventDefault();
-    
-    Router.go('/artists');
+
+    Router.go('artistShow', {cleanUrlName: this.cleanUrlName});
   },
 
   'submit .edit-artist': function(evt, tmpl) {
     evt.preventDefault();
 
-    var stageName = tmpl.find("#input-stage-name");
-    var realName = tmpl.find("#input-real-name");
-    var website = tmpl.find("#input-website");
+    var id = tmpl.find("#_id");
+    var stageName = tmpl.find("#stageName");
+    var realName = tmpl.find("#realName");
+    var website = tmpl.find("#website");
+    var cleanUrlName = tmpl.find("#cleanUrlName");
 
     var artist = {
+      _id: id.value,
       stageName: _.str.trim(stageName.value),
       realName: _.str.trim(realName.value),
-      website: _.str.trim(website.value)
+      website: _.str.trim(website.value),
+      cleanUrlName: _.str.trim(cleanUrlName.value)
     };
 
     Meteor.call("updateArtist", artist, function(err, result) {
@@ -44,5 +57,6 @@ Template.artistShow.events({
       }
     });
 
+    Router.go('artistShow', {cleanUrlName: cleanUrlName.value});
   }
 });

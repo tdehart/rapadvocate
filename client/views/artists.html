@@ -25,36 +25,69 @@
 </template>
 
 <template name="artistShow">
+  <h2>{{stageName}} <button class="btn btn-default edit-button">Edit</button></h2>
+  <div class="panel panel-default artist-details">
+    <div class="panel-heading">Details</div>
+    <div class="panel-body">
+      <ul class="list-unstyled">
+        {{#if realName}}
+          <li>Real Name: {{realName}}</li>
+        {{/if}}
+
+        {{#if birthdate}}
+          <li>Born: {{birthdate}}</li>
+        {{/if}}
+
+        {{#if birthplace}}
+          <li>Birthplace: {{birthdate}}</li>
+        {{/if}}
+
+        {{#if website}}
+          <li>Website: {{website}}</li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</template>
+
+<template name="artistEdit">
   <h2>{{stageName}}</h2>
   <form class="form-horizontal edit-artist" role="form">
+  <input type="hidden" id="_id" value="{{_id}}">
   <div class="form-group">
     <label for="input-stage-name" class="col-sm-1 control-label">Stage Name</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="input-stage-name" placeholder="" value="{{stageName}}">
+      <input type="text" class="form-control" id="stageName" placeholder="" value="{{stageName}}">
     </div>
   </div> 
   <div class="form-group">
-    <label for="input-real-name" class="col-sm-1 control-label">Real Name</label>
+    <label for="input-stage-name" class="col-sm-1 control-label">Clean URL</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="input-real-name" placeholder="" value="{{realName}}">
+      <input type="text" class="form-control" id="cleanUrlName" placeholder="e.g., kendrick-lamar" value="{{cleanUrlName}}">
+    </div>
+  </div>  
+  <div class="form-group">
+    <label for="realName" class="col-sm-1 control-label">Real Name</label>
+    <div class="col-sm-6">
+      <input type="text" class="form-control" id="realName" placeholder="" value="{{realName}}">
     </div>
   </div>
   <div class="form-group">
     <label for="input-birthdate" class="col-sm-1 control-label">Birthdate</label>
     <div class="col-sm-6">
-      <input type="date" class="form-control" id="input-birthdate" placeholder="e.g., 05/25/1975" value="{{birthdate}}">
+      <input type="date" class="form-control" id="birthdate" placeholder="e.g., 05/25/1975" value="{{birthdate}}">
     </div>
   </div>
   <div class="form-group">
     <label for="input-website" class="col-sm-1 control-label">Website</label>
     <div class="col-sm-6">
-      <input type="url" class="form-control" id="input-website" placeholder="e.g., http://www.kendricklamar.com" value="{{website}}">
+      <input type="url" class="form-control" id="website" placeholder="e.g., http://www.kendricklamar.com" value="{{website}}">
     </div>
   </div>
   <div class="form-group">
     <label for="input-tags" class="col-sm-1 control-label">Tags</label>
     <div class="col-sm-6">
-      <input type="text" class="form-control" id="input-tags" placeholder="ex) west coast, TDE" value="{{tags}}">
+      <input type="text" class="form-control" id="tags" placeholder="ex) west coast, TDE" value="{{tags}}">
     </div>
   </div>
 

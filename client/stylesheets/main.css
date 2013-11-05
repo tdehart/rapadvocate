@@ -1,7 +1,4 @@
 /* CSS declarations go here */
-body {
-  margin: 10px;
-}
 
 .new-artist {
   width: 500px;
@@ -14,4 +11,8 @@ body {
 .form-horizontal .control-label {
   padding-right: 0;
   text-align: left;
+}
+
+.artist-details {
+  width: 400px;
 }

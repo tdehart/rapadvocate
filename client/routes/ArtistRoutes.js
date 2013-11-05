@@ -24,11 +24,26 @@ ArtistShowController = RouteController.extend({
   after: function () {},
 
   waitOn: function () {
-    return Meteor.subscribe('artists', this.params.stageName);
+    return Meteor.subscribe('artists', {cleanUrlName: this.params.cleanUrlName});
   },
 
   data: function () {
-    return Artists.findOne({stageName: this.params.stageName});
+    return Artists.findOne({cleanUrlName: this.params.cleanUrlName});
+  }
+});
+
+//Artist Edit Controller
+ArtistEditController = RouteController.extend({
+  template: 'artistEdit',
+  before: function () {},
+  after: function () {},
+
+  waitOn: function () {
+    return Meteor.subscribe('artists', {cleanUrlName: this.params.cleanUrlName});
+  },
+
+  data: function () {
+    return Artists.findOne({cleanUrlName: this.params.cleanUrlName});
   }
 });
 
@@ -45,8 +60,13 @@ Router.map(function() {
   });
 
   this.route('artistShow', {
-    path: '/artist/:stageName',
+    path: '/artist/:cleanUrlName',
     controller: ArtistShowController
+  });
+
+  this.route('artistEdit', {
+    path: '/artist/:cleanUrlName/edit',
+    controller: ArtistEditController
   });
 
 });

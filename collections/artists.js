@@ -3,6 +3,7 @@
 //   _id: "4f297e550b3e6d9e2b7aa58e",
 //   stageName: "Kendrick Lamar",
 //   realName: "Kendrick Lamar Duckworth",
+//   cleanUrlName: 'kendrick-lamar',
 //   birthdate: 1329126719,
 //   birthplace: "Compton, California",
 //   website: "http://www.kendricklamar.com/",
@@ -29,7 +30,6 @@
 
 
 Artists = new Meteor.Collection("artists");
-
 // Use Meteor.methods for db operations
 Meteor.methods({
 
@@ -44,7 +44,7 @@ Meteor.methods({
   },
 
   updateArtist: function(artist) {
-    var artistObject = Artists.findOne({stageName: artist.stageName});
+    var artistObject = Artists.findOne({_id: artist._id});
     return Artists.update(artistObject, artist);
   }
 });
