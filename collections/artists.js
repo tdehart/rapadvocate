@@ -1,3 +1,5 @@
+Artists = new Meteor.Collection("artists");
+
 // Artists document
 // { 
 //   _id: "4f297e550b3e6d9e2b7aa58e",
@@ -28,23 +30,4 @@
 //   }]
 // }
 
-
-Artists = new Meteor.Collection("artists");
 // Use Meteor.methods for db operations
-Meteor.methods({
-
-  addArtist: function(artist) {
-    if (artist.stageName === "") {
-      throw new Meteor.Error(403, "Stage name required");
-    } else if (Artists.find({stageName: artist.stageName}).count() > 0) {
-      throw new Meteor.Error(403, "Duplicate artist");
-    }
-
-    return Artists.insert(artist);
-  },
-
-  updateArtist: function(artist) {
-    var artistObject = Artists.findOne({_id: artist._id});
-    return Artists.update(artistObject, artist);
-  }
-});

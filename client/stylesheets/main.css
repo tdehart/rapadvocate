@@ -1,18 +1,18 @@
 /* CSS declarations go here */
 
-.new-artist {
-  width: 500px;
-}
-
-.delete-button {
-  margin-left: 450px;
-}
-
 .form-horizontal .control-label {
-  padding-right: 0;
   text-align: left;
 }
 
-.artist-details {
-  width: 400px;
+.releases-div {
+  padding-left: 40px;
 }
+
+.artist-label {
+  width: 130px;
+}
+
+.sortable {
+  cursor: pointer;
+}
+

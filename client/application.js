@@ -3,6 +3,7 @@ Router.configure({
   loadingTemplate: 'loading',
   notFoundTemplate: 'notFound'
 });
+
 // var wrappedFind = Meteor.Collection.prototype.find;
  
 // Meteor.Collection.prototype.find = function () {
