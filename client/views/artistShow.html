@@ -1,0 +1,57 @@
+<template name="artistShow">
+  <div class="row">
+    <div class="col-lg-3">
+      <h2>{{stageName}} </h2> 
+      <div class="panel panel-default artist-details">
+        <div class="panel-heading">Details</div>
+        <div class="panel-body">
+          <ul class="list-unstyled">
+            {{#if realName}}
+              <li>Real Name: {{realName}}</li>
+            {{/if}}
+
+            {{#if birthdate}}
+              <li>Born: {{birthdate}}</li>
+            {{/if}}
+
+            {{#if birthplace}}
+              <li>Birthplace: {{birthplace}}</li>
+            {{/if}}
+
+            {{#if website}}
+              <li>Website: {{website}}</li>
+            {{/if}}
+
+            {{#if twitterUsername}}
+              <li>Twitter: {{twitterUsername}}</li>
+            {{/if}}
+          </ul>
+          <button class="btn btn-default edit-button">Edit</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 releases-div">
+      <h3>Releases</h3>
+        <ol class="sortable">
+        {{#each releases}}
+          <li>
+            {{releaseName}} ({{releaseType}})
+          </li>
+        {{/each}}
+        </ol>
+
+    </div>
+
+    <div class="col-lg-5 releases-div">
+      <h3>Twitter</h3>
+      <ul="unstyled-list">
+        {{#each tweets}}
+          <li>
+            {{text}} at {{createdAt}}
+          </li>
+        {{/each}}
+      </ul>
+
+    </div>    
+  </div>
+</template>

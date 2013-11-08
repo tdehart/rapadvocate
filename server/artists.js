@@ -4,9 +4,11 @@ Meteor.methods({
 
     if (artist.stageName === "") {
       throw new Meteor.Error(403, "Stage name required");
-    } else if(artist.cleanUrlName === "") {
+    } else if (artist.cleanUrlName === "") {
       throw new Meteor.Error(403, "Clean URL name required");
-    } else if (Artists.find({stageName: artist.stageName}).count() > 0) {
+    } else if (Artists.find({
+      stageName: artist.stageName
+    }).count() > 0) {
       throw new Meteor.Error(403, "Duplicate artist");
     }
 
@@ -18,7 +20,19 @@ Meteor.methods({
       throw new Meteor.Error(403, "Clean URL name required");
     }
 
-    return Artists.update({_id: data.artistId}, {$set: data.artist});
+    return Artists.update({
+      _id: data.artistId
+    }, {
+      $set: data.artist
+    });
+  },
+
+  deleteArtist: function(id) {
+    if (!id) {
+      throw new Meteor.Error(403, "Artist ID required to delete.");
+    }
+
+    return Artists.remove({_id: id});
   },
 
   addMusicRelease: function(data) {
@@ -30,6 +44,26 @@ Meteor.methods({
       throw new Meteor.Error(403, "Album/mixtape type required");
     }
 
-    return Artists.update({_id: data.artistId}, {$addToSet: {releases: data.release}});
+    return Artists.update({
+      _id: data.artistId
+    }, {
+      $addToSet: {
+        releases: data.release
+      }
+    });
+  },
+
+  addTweet: function(data) {
+    if (data.twitterUsername === "") {
+      throw new Meteor.Error(403, "Need a twitter username to add a tweet");
+    }
+
+    return Artists.update({
+      twitterUsername: ("@" + data.twitterUsername)
+    }, {
+      $addToSet: {
+        tweets: data.tweet
+      }
+    });
   }
 });

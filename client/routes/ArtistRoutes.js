@@ -1,5 +1,5 @@
-//Artist Index Controller
-ArtistsController = RouteController.extend({
+//Artist List Controller
+ArtistListController = RouteController.extend({
   template: 'artists',
 
   before: function () {},
@@ -11,7 +11,7 @@ ArtistsController = RouteController.extend({
 
   data: function () {
     return {
-      artists: Artists.find()
+      artists: Artists.find(),
     };
   },
 
@@ -51,12 +51,12 @@ ArtistEditController = RouteController.extend({
 Router.map(function() {
   this.route('root', {
     path: '/',
-    controller: ArtistsController
+    controller: ArtistListController
   });
 
   this.route('artists', {
     path: '/artists',
-    controller: ArtistsController
+    controller: ArtistListController
   });
 
   this.route('artistShow', {

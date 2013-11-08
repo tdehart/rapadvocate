@@ -1,72 +1,3 @@
-<template name="artists">
-  <h2>Artists</h2>
-
-  <form class="new-artist">
-    <div class="form-group">
-      <input type="text" class="form-control" id="new-artist-input" placeholder="Enter artist name">
-    </div>
-  </form>
-
-  <ul>
-  {{#isolate}}
-    {{#each artists}}
-      {{> artist}}
-    {{/each}}
-  {{/isolate}}
-  </ul>
-</template>
-
-<template name="artist">
-  <li>
-    <a href="{{pathFor 'artistShow'}}">
-      {{stageName}}
-    </a>
-  </li>
-</template>
-
-<template name="artistShow">
-  <div class="row">
-    <div class="col-lg-3">
-      <h2>{{stageName}} </h2> 
-      <div class="panel panel-default artist-details">
-        <div class="panel-heading">Details</div>
-        <div class="panel-body">
-          <ul class="list-unstyled">
-            {{#if realName}}
-              <li>Real Name: {{realName}}</li>
-            {{/if}}
-
-            {{#if birthdate}}
-              <li>Born: {{birthdate}}</li>
-            {{/if}}
-
-            {{#if birthplace}}
-              <li>Birthplace: {{birthplace}}</li>
-            {{/if}}
-
-            {{#if website}}
-              <li>Website: {{website}}</li>
-            {{/if}}
-          </ul>
-          <button class="btn btn-default edit-button">Edit</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-8 releases-div">
-      <h3>Releases</h3>
-        <ol class="sortable">
-        {{#each releases}}
-          <li>
-            {{releaseName}} ({{releaseType}})
-          </li>
-        {{/each}}
-        </ol>
-
-    </div>
-  </div>
-  
-</template>
-
 <template name="artistEdit">
   <a href="{{pathFor 'artistShow'}}">
     <h2>{{stageName}}</h2>
@@ -127,7 +58,6 @@
     {{/each}}
   </ul>
 
-
   <h3>Edit Details</h3>
   <form class="form-horizontal edit-artist" role="form">
     <input type="hidden" id="_id" value="{{_id}}">
@@ -170,7 +100,7 @@
     <div class="form-group">
       <label for="input-twitter" class="col-sm-1 control-label artist-label">Artist Twitter</label>
       <div class="col-sm-6">
-        <input type="url" class="form-control" id="input-twitter" placeholder="e.g., @kendricklamar" value="{{twitter}}">
+        <input type="text" class="form-control" id="input-twitter" placeholder="e.g., @kendricklamar" value="{{twitter}}">
       </div>
     </div>    
     <div class="form-group">
@@ -184,8 +114,4 @@
     <button class="btn btn-default cancel-button">Cancel</button>
     <button class="btn btn-danger delete-button pull-right">Delete</button>
   </form>
-
-  
-  
-
 </template>

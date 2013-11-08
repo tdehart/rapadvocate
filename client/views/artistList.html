@@ -1,0 +1,33 @@
+<template name="artists">
+  <h2>Artists</h2>
+
+  <form class="new-artist">
+    <div class="form-group">
+      <input type="text" class="form-control" id="new-artist-input" placeholder="Enter artist name">
+    </div>
+  </form>
+
+  <ul>
+  {{#isolate}}
+    {{#each artists}}
+      {{> artist}}
+    {{/each}}
+  {{/isolate}}
+  </ul>
+
+  <ul>
+  {{#each tweets}}
+    <li>
+    {{text}}
+    </li>
+  {{/each}}
+  </ul>
+</template>
+
+<template name="artist">
+  <li>
+    <a href="{{pathFor 'artistShow'}}">
+      {{stageName}}
+    </a>
+  </li>
+</template>
