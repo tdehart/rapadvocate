@@ -10,6 +10,7 @@
   </head>
 
   <body>
+
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
         <a class="navbar-brand" href="{{pathFor 'artists'}}">RapAdvocate</a>
@@ -18,6 +19,11 @@
             <input type="text" class="form-control" placeholder="Search">
           </div>
         </form>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">{{loginButtons}}</a></li>
+        </ul>
+
       </div>
     </nav>
 

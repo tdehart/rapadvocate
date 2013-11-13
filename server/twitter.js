@@ -1,11 +1,12 @@
 if (Meteor.isServer) {
   Meteor.startup(function() {
-    // connect the twitter api
+    var env = process.env;
+
     var twit = new TwitMaker({
-      consumer_key: '',
-      consumer_secret: '',
-      access_token: '',
-      access_token_secret: ''
+      consumer_key: env.TWITTER_CONSUMER_KEY,
+      consumer_secret: env.TWITTER_CONSUMER_SECRET,
+      access_token: env.TWITTER_TOKEN,
+      access_token_secret: env.TWITTER_TOKEN_SECRET
     });
 
     var Fiber = Npm.require('fibers');

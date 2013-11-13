@@ -44,13 +44,14 @@ Meteor.methods({
       throw new Meteor.Error(403, "Album/mixtape type required");
     }
 
-    return Artists.update({
-      _id: data.artistId
-    }, {
-      $addToSet: {
-        releases: data.release
-      }
-    });
+    var artist = Artists.findOne({_id: data.artistId});
+    if (artist.releases) {
+      data.release.rank = artist.releases.length + 1;
+    } else {
+      data.release.rank = 1;
+    }
+
+    Artists.update(artist, {$addToSet: {releases: data.release}});
   },
 
   addTweet: function(data) {
