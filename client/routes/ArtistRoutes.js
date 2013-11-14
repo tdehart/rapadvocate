@@ -2,14 +2,14 @@
 ArtistListController = RouteController.extend({
   template: 'artists',
 
-  before: function () {},
-  after: function () {},
+  before: function() {},
+  after: function() {},
 
-  waitOn: function () {
+  waitOn: function() {
     return Meteor.subscribe('artists');
   },
 
-  data: function () {
+  data: function() {
     return {
       artists: Artists.find(),
     };
@@ -20,29 +20,35 @@ ArtistListController = RouteController.extend({
 //Artist Show Controller
 ArtistShowController = RouteController.extend({
   template: 'artistShow',
-  before: function () {},
-  after: function () {},
+  before: function() {},
+  after: function() {},
 
   waitOn: function () {
-    return Meteor.subscribe('artists', {cleanUrlName: this.params.cleanUrlName});
+    return [Meteor.subscribe('artists', {cleanUrlName: this.params.cleanUrlName}),
+            Meteor.subscribe('rankings', {userId: Meteor.userId()})];
   },
 
-  data: function () {
-    return Artists.findOne({cleanUrlName: this.params.cleanUrlName});
+  data: function() {
+    var artist = Artists.findOne({cleanUrlName: this.params.cleanUrlName});
+
+    return {
+      artist: artist,
+      rankings: Rankings.findOne({artistId: artist._id, userId: Meteor.userId()})
+    };
   }
 });
 
 //Artist Edit Controller
 ArtistEditController = RouteController.extend({
   template: 'artistEdit',
-  before: function () {},
-  after: function () {},
+  before: function() {},
+  after: function() {},
 
-  waitOn: function () {
+  waitOn: function() {
     return Meteor.subscribe('artists', {cleanUrlName: this.params.cleanUrlName});
   },
 
-  data: function () {
+  data: function() {
     return Artists.findOne({cleanUrlName: this.params.cleanUrlName});
   }
 });

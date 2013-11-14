@@ -4,6 +4,7 @@ Template.artistShow.rendered = function() {
 
     $("ol li").each(function(index, element) {
       console.log(_.str.trim($(this).text()));
+
     });
   });
 };
@@ -17,7 +18,7 @@ Template.artistShow.events({
     evt.preventDefault();
 
     Router.go('artistEdit', {
-      cleanUrlName: this.cleanUrlName
+      cleanUrlName: this.artist.cleanUrlName
     });
   }
 });
