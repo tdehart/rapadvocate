@@ -1,7 +1,7 @@
 <template name="artistShow">
   <div class="row">
     <div class="col-lg-3">
-      <h2>{{artist.stageName}} </h2> 
+      <h2 id="artist-stage-name">{{artist.stageName}}</h2> 
       <div class="panel panel-default artist-details">
         <div class="panel-heading">Details</div>
         <div class="panel-body">
@@ -26,7 +26,7 @@
               <li>Twitter: {{artist.twitterUsername}}</li>
             {{/if}}
           </ul>
-          <button class="btn btn-default edit-button">Edit</button>
+          {{#if currentUser}}<button class="btn btn-default edit-button">Edit</button>{{/if}}
         </div>
       </div>
     </div>
@@ -35,24 +35,26 @@
         <ol>
         {{#each artist.releases}}
           <li>
-            {{releaseName}} ({{releaseType}})
+            {{releaseName}} ({{releaseType}}) Rank {{rank}}
           </li>
         {{/each}}
         </ol>
 
+      {{#if currentUser}}
       <h4>My Ranks</h4>
-      <ol class="sortable">
+      <ol id="rank-list" class="sortable">
         {{#each rankings.releases}}
           <li>
             {{releaseName}} ({{releaseType}})
           </li>
         {{/each}}
       </ol>
+      {{/if}}
     </div>
 
     <div class="col-lg-5 releases-div">
       <h3>Twitter</h3>
-      <ul="unstyled-list">
+      <ul class="unstyled-list">
         {{#each artist.tweets}}
           <li>
             {{text}} at {{createdAt}}

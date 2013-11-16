@@ -3,6 +3,8 @@
     "bootstrap-3": {},
     "underscore-string-latest": {},
     "iron-router": {},
-    "twit": {}
+    "twit": {},
+    "cron-tick": {},
+    "lodash": {}
   }
 }

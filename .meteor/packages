@@ -4,7 +4,6 @@
 # but you can also edit it by hand.
 
 standard-app-packages
-insecure
 preserve-inputs
 bootstrap-3
 underscore-string-latest
@@ -12,3 +11,5 @@ iron-router
 twit
 accounts-password
 accounts-ui
+cron-tick
+lodash

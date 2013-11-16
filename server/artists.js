@@ -1,7 +1,5 @@
 Meteor.methods({
   addArtist: function(artist) {
-    console.log('add artist', this);
-
     if (artist.stageName === "") {
       throw new Meteor.Error(403, "Stage name required");
     } else if (artist.cleanUrlName === "") {

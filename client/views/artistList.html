@@ -1,11 +1,13 @@
 <template name="artists">
   <h2>Artists</h2>
 
+  {{#if currentUser}}
   <form class="new-artist">
     <div class="form-group">
       <input type="text" class="form-control" id="new-artist-input" placeholder="Enter artist name">
     </div>
   </form>
+  {{/if}}
 
   <ul>
   {{#isolate}}

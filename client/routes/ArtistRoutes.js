@@ -41,7 +41,13 @@ ArtistShowController = RouteController.extend({
 //Artist Edit Controller
 ArtistEditController = RouteController.extend({
   template: 'artistEdit',
-  before: function() {},
+  before: function() {
+    if (!Meteor.user()) {
+      Router.go('artistShow', {
+        cleanUrlName: this.params.cleanUrlName
+      });
+    }
+  },
   after: function() {},
 
   waitOn: function() {

@@ -5,7 +5,9 @@
       "bootstrap-3": {},
       "underscore-string-latest": {},
       "iron-router": {},
-      "twit": {}
+      "twit": {},
+      "cron-tick": {},
+      "lodash": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -27,6 +29,16 @@
         "git": "https://github.com/subhog/meteor-twit.git",
         "tag": "v0.2.0",
         "commit": "3eb473f9efef8c77ae6a8eb6715fbdf93c4d87c0"
+      },
+      "cron-tick": {
+        "git": "https://github.com/tmeasday/meteor-cron.git",
+        "tag": "v0.0.4",
+        "commit": "44cff9116af510fe53704fdeeff57c444ceb75ba"
+      },
+      "lodash": {
+        "git": "https://github.com/alethes/meteor-lodash.git",
+        "tag": "v0.7.0",
+        "commit": "0d4d8b43728f3ad1b54268148e61de398a3a4840"
       }
     }
   }
