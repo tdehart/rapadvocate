@@ -7,11 +7,9 @@ Accounts.onCreateUser(function(options, user) {
       releases: artist.releases
     };
 
-    Meteor.call("addUserRankings", data, function(err, result) {
-      if (err) {
-        console.log("Error adding user ranking");
-      }
-    });
+    addUserRankings(data);
+
+    
   });
 
   // We still want the default hook's 'profile' behavior.

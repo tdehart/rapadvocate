@@ -25,11 +25,7 @@ if (Meteor.isServer) {
     //         }
     //       };
 
-    //       Meteor.call("addTweet", data, function(err, result) {
-    //         if (err) {
-    //           console.log("Error updating artist", err);
-    //         }
-    //       });
+    //       addTweet(data);
     //     });
     //   }).run();
 

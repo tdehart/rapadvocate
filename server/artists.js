@@ -1,6 +1,18 @@
+addTweet = function(data) {
+  return Artists.update({
+    twitterUsername: ("@" + data.twitterUsername)
+  }, {
+    $addToSet: {
+      tweets: data.tweet
+    }
+  });
+};
+
 Meteor.methods({
   addArtist: function(artist) {
-    if (artist.stageName === "") {
+    if (!Meteor.user()) {
+      throw new Meteor.Error(403, "You must be logged in for this action");
+    } else if (artist.stageName === "") {
       throw new Meteor.Error(403, "Stage name required");
     } else if (artist.cleanUrlName === "") {
       throw new Meteor.Error(403, "Clean URL name required");
@@ -14,7 +26,9 @@ Meteor.methods({
   },
 
   updateArtist: function(data) {
-    if (data.artist.cleanUrlName === "") {
+    if (!Meteor.user()) {
+      throw new Meteor.Error(403, "You must be logged in for this action");
+    } else if (data.artist.cleanUrlName === "") {
       throw new Meteor.Error(403, "Clean URL name required");
     }
 
@@ -26,7 +40,9 @@ Meteor.methods({
   },
 
   deleteArtist: function(id) {
-    if (!id) {
+    if (!Meteor.user()) {
+      throw new Meteor.Error(403, "You must be logged in for this action");
+    } else if (!id) {
       throw new Meteor.Error(403, "Artist ID required to delete.");
     }
 
@@ -34,7 +50,9 @@ Meteor.methods({
   },
 
   addMusicRelease: function(data) {
-    if (data.artistId === "") {
+    if (!Meteor.user()) {
+      throw new Meteor.Error(403, "You must be logged in for this action");
+    } else if (data.artistId === "") {
       throw new Meteor.Error(403, "Artist ID required");
     } else if (data.release.releaseName === "") {
       throw new Meteor.Error(403, "Album/mixtape name required");
@@ -50,19 +68,5 @@ Meteor.methods({
     }
 
     Artists.update(artist, {$addToSet: {releases: data.release}});
-  },
-
-  addTweet: function(data) {
-    if (data.twitterUsername === "") {
-      throw new Meteor.Error(403, "Need a twitter username to add a tweet");
-    }
-
-    return Artists.update({
-      twitterUsername: ("@" + data.twitterUsername)
-    }, {
-      $addToSet: {
-        tweets: data.tweet
-      }
-    });
   }
 });

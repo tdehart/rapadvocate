@@ -24,8 +24,6 @@ Template.artistShow.rendered = function() {
     Meteor.call("updateUserRankings", data, function(err, result) {
       if (err) {
         console.log("Error submitting rankings", err);
-      } else {
-        Meteor.call("updateArtistRankings");
       }
     });
   });
