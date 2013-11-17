@@ -70,3 +70,16 @@ Meteor.methods({
     Artists.update(artist, {$addToSet: {releases: data.release}});
   }
 });
+
+//Seed some artists if none are present
+Meteor.startup(function() {
+  var artists = JSON.parse(Assets.getText("artists.json"));
+
+  if (!Artists.find().count()) {
+    artists.forEach(function(artist) {
+      console.log("Inserting " + artist.stageName);
+      Artists.insert(artist);
+    });
+  }
+
+});

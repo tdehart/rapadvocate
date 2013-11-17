@@ -1,0 +1,15 @@
+TODOS
+
+-When deleting artist remove their rankings
+-When adding artist create rankings for every user
+-When adding an artist release add a ranking release
+-When removing an artist release remove respective ranking release and shift everything up that was below that release
+-Twitter stream
+-Chat
+-Layout/Styling
+
+-Admin accounts and validation
+-Search - make a route for this since artist index is reactive
+-Releases with multiple artists (e.g., Watch the Throne)
+-Similar artists
+-Write a ranking plugin (Borda count)

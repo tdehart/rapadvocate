@@ -15,3 +15,8 @@
 .sortable {
   cursor: pointer;
 }
+
+.col-lg-3 img {
+  width: 100%;
+  margin-bottom: 20px;
+}

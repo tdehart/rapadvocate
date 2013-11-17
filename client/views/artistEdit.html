@@ -21,12 +21,12 @@
         <input type="text" class="form-control" id="input-release-name" placeholder="album or mixtape name">
       </div>
     </div>
-     <div class="form-group">
-      <label for="input-other-artists" class="col-sm-1 control-label artist-label">Other Artists</label>
+    <div class="form-group">
+      <label for="input-release-year" class="col-sm-1 control-label artist-label">Release Year</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" id="input-other-artists" placeholder="comma-separated e.g., Kanye West, Jay-Z">
+        <input type="text" class="form-control" id="input-release-year" placeholder="">
       </div>
-    </div>     
+    </div>
     <div class="form-group">
       <label for="input-itunes-url" class="col-sm-1 control-label artist-label">iTunes URL</label>
       <div class="col-sm-6">
@@ -44,6 +44,12 @@
       <div class="col-sm-6">
         <input type="text" class="form-control" id="input-amazon-url" placeholder="">
       </div>
+    </div>
+    <div class="form-group">
+      <label for="input-mixtape-url" class="col-sm-1 control-label artist-label">Mixtape URL</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="input-mixtape-url" placeholder="">
+      </div>
     </div> 
 
     <button type="submit" class="btn btn-primary">Submit</button>
@@ -53,7 +59,7 @@
   <ul>
     {{#each releases}}
     <li>
-      {{rank}} {{releaseName}} ({{releaseType}})
+      {{rank}} {{releaseName}} ({{releaseYear}}) ({{releaseType}})
     </li>
     {{/each}}
   </ul>
@@ -100,15 +106,16 @@
     <div class="form-group">
       <label for="input-twitter" class="col-sm-1 control-label artist-label">Artist Twitter</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" id="input-twitter" placeholder="e.g., @kendricklamar" value="{{twitter}}">
-      </div>
-    </div>    
-    <div class="form-group">
-      <label for="input-tags" class="col-sm-1 control-label artist-label">Tags</label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control" id="input-tags" placeholder="ex) west coast, TDE" value="{{tags}}">
+        <input type="text" class="form-control" id="input-twitter" placeholder="e.g., kendricklamar" value="{{twitterUsername}}">
       </div>
     </div>
+    <div class="form-group">
+      <label for="input-artist-image" class="col-sm-1 control-label artist-label">Artist Image</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" id="input-artist-image" placeholder="e.g., http://i.imgur.com/JNBmf.jpg" value="{{artistImage}}">
+      </div>
+    </div>    
+   
 
     <button type="submit" class="btn btn-success">Save</button>
     <button class="btn btn-default cancel-button">Cancel</button>

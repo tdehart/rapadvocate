@@ -1,0 +1,512 @@
+[
+  {
+    "artistImage": "http://i.imgur.com/RkyFH8c.jpg",
+    "birthdate": "1972-10-17",
+    "birthplace": "Detroit, MI",
+    "cleanUrlName": "eminem",
+    "realName": "Marshall Mathers",
+    "releases": [
+      {
+        "rank": 1,
+        "releaseName": "Infinite",
+        "releaseType": "Album",
+        "releaseYear": "1996"
+      },
+      {
+        "rank": 2,
+        "releaseName": "The Slim Shady LP",
+        "releaseType": "Album",
+        "releaseYear": "1999"
+      },
+      {
+        "rank": 3,
+        "releaseName": "The Marshall Mathers LP",
+        "releaseType": "Album",
+        "releaseYear": "2000"
+      },
+      {
+        "rank": 4,
+        "releaseName": "The Eminem Show",
+        "releaseType": "Album",
+        "releaseYear": "2002"
+      },
+      {
+        "rank": 5,
+        "releaseName": "Encore",
+        "releaseType": "Album",
+        "releaseYear": "2004"
+      },
+      {
+        "rank": 6,
+        "releaseName": "Relapse",
+        "releaseType": "Album",
+        "releaseYear": "2009"
+      },
+      {
+        "rank": 7,
+        "releaseName": "Recovery",
+        "releaseType": "Album",
+        "releaseYear": "2010"
+      },
+      {
+        "rank": 8,
+        "releaseName": "The Marshall Mathers LP",
+        "releaseType": "Album",
+        "releaseYear": "2013"
+      }
+    ],
+    "stageName": "Eminem",
+    "twitterUsername": "Eminem",
+    "website": "http://eminem.com"
+  },
+  {
+    "artistImage": "http://i.imgur.com/kK56ihl.jpg",
+    "birthdate": "1987-06-17",
+    "birthplace": "Compton, CA",
+    "cleanUrlName": "kendrick-lamar",
+    "realName": "Kendrick Lamar Duckworth",
+    "releases": [
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 1,
+        "releaseName": "Kendrick Lamar EP",
+        "releaseType": "Album",
+        "releaseYear": "2009",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 2,
+        "releaseName": "Section.80",
+        "releaseType": "Album",
+        "releaseYear": "2011",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 3,
+        "releaseName": "Good Kid, M.A.A.D City",
+        "releaseType": "Album",
+        "releaseYear": "2012",
+        "spotifyUrl": ""
+      }
+    ],
+    "stageName": "Kendrick Lamar",
+    "twitterUsername": "kendricklamar",
+    "website": "http://kendricklamar.com"
+  },
+  {
+    "artistImage": "http://i.imgur.com/X3PAiuy.jpg",
+    "birthdate": "1977-06-08",
+    "birthplace": "Chicago, IL",
+    "cleanUrlName": "kanye-west",
+    "realName": "Kanye Omari West",
+    "releases": [
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 1,
+        "releaseName": "The College Dropout",
+        "releaseType": "Album",
+        "releaseYear": "2004",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 2,
+        "releaseName": "Late Registration",
+        "releaseType": "Album",
+        "releaseYear": "2005",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 3,
+        "releaseName": "Graduation",
+        "releaseType": "Album",
+        "releaseYear": "2007",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 4,
+        "releaseName": "808s & Heartbreak",
+        "releaseType": "Album",
+        "releaseYear": "2008",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 5,
+        "releaseName": "My Beautiful Dark Twisted Fantasy",
+        "releaseType": "Album",
+        "releaseYear": "2010",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 6,
+        "releaseName": "Yeezus",
+        "releaseType": "Album",
+        "releaseYear": "2013",
+        "spotifyUrl": ""
+      }
+    ],
+    "stageName": "Kanye West",
+    "twitterUsername": "kanyewest",
+    "website": "http://kanyewest.com/"
+  },
+  {
+    "artistImage": "http://i.imgur.com/Nu8xIC6.jpg",
+    "birthdate": "1970-04-10",
+    "birthplace": "Queens, NY",
+    "cleanUrlName": "q-tip",
+    "realName": "Jonathan Davis",
+    "releases": [
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 1,
+        "releaseName": "Amplified",
+        "releaseType": "Album",
+        "releaseYear": "1999",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 2,
+        "releaseName": "The Renaissance",
+        "releaseType": "Album",
+        "releaseYear": "2008",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 3,
+        "releaseName": "Kamaal/The Abstract",
+        "releaseType": "Album",
+        "releaseYear": "2009",
+        "spotifyUrl": ""
+      }
+    ],
+    "stageName": "Q-Tip",
+    "twitterUsername": "QtipTheAbstract",
+    "website": "http://qtiponline.com/"
+  },
+  {
+    "artistImage": "http://i.imgur.com/F4scKqm.jpg",
+    "birthdate": "1982-09-27",
+    "birthplace": "New Orleans, Louisiana",
+    "cleanUrlName": "lil-wayne",
+    "realName": "Dwayne Michael Carter, Jr.",
+    "releases": [
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 1,
+        "releaseName": "Tha Block Is Hot",
+        "releaseType": "Album",
+        "releaseYear": "1999",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 2,
+        "releaseName": "Lights Out",
+        "releaseType": "Album",
+        "releaseYear": "2000",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 3,
+        "releaseName": "500 Degreez",
+        "releaseType": "Album",
+        "releaseYear": "2002",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 4,
+        "releaseName": "Tha Carter",
+        "releaseType": "Album",
+        "releaseYear": "2004",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 5,
+        "releaseName": "Tha Carter II",
+        "releaseType": "Album",
+        "releaseYear": "2005",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 6,
+        "releaseName": "Like Father, Like Son",
+        "releaseType": "Album",
+        "releaseYear": "2006",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 7,
+        "releaseName": "Tha Carter III",
+        "releaseType": "Album",
+        "releaseYear": "2008",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 8,
+        "releaseName": "Rebirth",
+        "releaseType": "Album",
+        "releaseYear": "2010",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 9,
+        "releaseName": "I Am Not a Human Being",
+        "releaseType": "Album",
+        "releaseYear": "2010",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 10,
+        "releaseName": "Tha Carter IV",
+        "releaseType": "Album",
+        "releaseYear": "2011",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 11,
+        "releaseName": "I Am Not a Human Being II",
+        "releaseType": "Album",
+        "releaseYear": "2013",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 12,
+        "releaseName": "Da Drought",
+        "releaseType": "Mixtape",
+        "releaseYear": "2003",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 13,
+        "releaseName": "Da Drought 2",
+        "releaseType": "Mixtape",
+        "releaseYear": "2004",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 14,
+        "releaseName": "The Prefix",
+        "releaseType": "Mixtape",
+        "releaseYear": "2004",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 15,
+        "releaseName": "The Suffix",
+        "releaseType": "Mixtape",
+        "releaseYear": "2005",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 16,
+        "releaseName": "The Dedication",
+        "releaseType": "Mixtape",
+        "releaseYear": "2005",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 17,
+        "releaseName": "Dedication 2",
+        "releaseType": "Mixtape",
+        "releaseYear": "2006",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 18,
+        "releaseName": "Da Drought 3",
+        "releaseType": "Mixtape",
+        "releaseYear": "2007",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 19,
+        "releaseName": "Dedication 3",
+        "releaseType": "Mixtape",
+        "releaseYear": "2008",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 20,
+        "releaseName": "No Ceilings",
+        "releaseType": "Mixtape",
+        "releaseYear": "2009",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 21,
+        "releaseName": "Sorry 4 the Wait",
+        "releaseType": "Mixtape",
+        "releaseYear": "2011",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 22,
+        "releaseName": "Dedication 4",
+        "releaseType": "Mixtape",
+        "releaseYear": "2012",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 23,
+        "releaseName": "Dedication 5",
+        "releaseType": "Mixtape",
+        "releaseYear": "2013",
+        "spotifyUrl": ""
+      }
+    ],
+    "stageName": "Lil Wayne",
+    "twitterUsername": "LilTunechi",
+    "website": "http://lilwayne-online.com/"
+  },
+  {
+    "artistImage": "http://i.imgur.com/UT9F0Sv.jpg",
+    "birthdate": "1984-01-30",
+    "birthplace": "Cleveland, OH",
+    "cleanUrlName": "kid-cudi",
+    "realName": "Scott Mescudi",
+    "releases": [
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 1,
+        "releaseName": "Man on the Moon: The End of Day",
+        "releaseType": "Album",
+        "releaseYear": "2009",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 2,
+        "releaseName": "Man on the Moon II: The Legend of Mr. Rager",
+        "releaseType": "Album",
+        "releaseYear": "2010",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 3,
+        "releaseName": "A Kid Named Cudi",
+        "releaseType": "Mixtape",
+        "releaseYear": "2008",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 4,
+        "releaseName": "Indicud",
+        "releaseType": "Album",
+        "releaseYear": "2013",
+        "spotifyUrl": ""
+      }
+    ],
+    "stageName": "Kid Cudi",
+    "twitterUsername": "ducidni",
+    "website": "http://kidcudi.com/"
+  }
+]
