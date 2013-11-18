@@ -7,52 +7,94 @@
     "realName": "Marshall Mathers",
     "releases": [
       {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
         "rank": 1,
         "releaseName": "Infinite",
         "releaseType": "Album",
-        "releaseYear": "1996"
+        "releaseYear": "1996",
+        "spotifyUrl": ""
       },
       {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
         "rank": 2,
         "releaseName": "The Slim Shady LP",
         "releaseType": "Album",
-        "releaseYear": "1999"
+        "releaseYear": "1999",
+        "spotifyUrl": ""
       },
       {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
         "rank": 3,
         "releaseName": "The Marshall Mathers LP",
         "releaseType": "Album",
-        "releaseYear": "2000"
+        "releaseYear": "2000",
+        "spotifyUrl": ""
       },
       {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
         "rank": 4,
         "releaseName": "The Eminem Show",
         "releaseType": "Album",
-        "releaseYear": "2002"
+        "releaseYear": "2002",
+        "spotifyUrl": ""
       },
       {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
         "rank": 5,
+        "releaseName": "The Eminem Show",
+        "releaseType": "Album",
+        "releaseYear": "2002",
+        "spotifyUrl": ""
+      },
+      {
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 6,
         "releaseName": "Encore",
         "releaseType": "Album",
-        "releaseYear": "2004"
+        "releaseYear": "2004",
+        "spotifyUrl": ""
       },
       {
-        "rank": 6,
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 7,
         "releaseName": "Relapse",
         "releaseType": "Album",
-        "releaseYear": "2009"
+        "releaseYear": "2009",
+        "spotifyUrl": ""
       },
       {
-        "rank": 7,
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 8,
         "releaseName": "Recovery",
         "releaseType": "Album",
-        "releaseYear": "2010"
+        "releaseYear": "2010",
+        "spotifyUrl": ""
       },
       {
-        "rank": 8,
-        "releaseName": "The Marshall Mathers LP",
+        "amazonUrl": "",
+        "iTunesUrl": "",
+        "mixtapeUrl": "",
+        "rank": 9,
+        "releaseName": "The Marshall Mathers LP 2",
         "releaseType": "Album",
-        "releaseYear": "2013"
+        "releaseYear": "2013",
+        "spotifyUrl": ""
       }
     ],
     "stageName": "Eminem",
