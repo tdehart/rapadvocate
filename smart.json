@@ -5,6 +5,9 @@
     "iron-router": {},
     "twit": {},
     "cron-tick": {},
-    "lodash": {}
+    "lodash": {},
+    "iron-router-progress": {},
+    "jquery-imagesloaded": {},
+    "jquery-masonry": {}
   }
 }

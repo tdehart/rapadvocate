@@ -29,3 +29,15 @@ Template.artist.rendered = function() {
 
   Session.set('doAddAnimation', false);
 };
+
+Template.artists.rendered = function() {
+  var $container = $('#masonry-container');
+  // initialize
+  $container.imagesLoaded(function() {
+    $container.masonry({
+      columnWidth: 60,
+      itemSelector: '.masonry-item'
+    });
+  });
+
+};

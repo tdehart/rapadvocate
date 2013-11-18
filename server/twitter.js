@@ -1,12 +1,12 @@
 Meteor.startup(function() {
   var env = process.env;
 
-  var twit = new TwitMaker({
-    consumer_key: env.TWITTER_CONSUMER_KEY,
-    consumer_secret: env.TWITTER_CONSUMER_SECRET,
-    access_token: env.TWITTER_TOKEN,
-    access_token_secret: env.TWITTER_TOKEN_SECRET
-  });
+  // var twit = new TwitMaker({
+  //   consumer_key: env.TWITTER_CONSUMER_KEY,
+  //   consumer_secret: env.TWITTER_CONSUMER_SECRET,
+  //   access_token: env.TWITTER_TOKEN,
+  //   access_token_secret: env.TWITTER_TOKEN_SECRET
+  // });
 
   var Fiber = Npm.require('fibers');
 

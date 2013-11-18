@@ -13,3 +13,6 @@ accounts-password
 accounts-ui
 cron-tick
 lodash
+iron-router-progress
+jquery-imagesloaded
+jquery-masonry

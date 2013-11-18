@@ -20,3 +20,34 @@
   width: 100%;
   margin-bottom: 20px;
 }
+
+#iron-router-progress {
+    background-color : #29d;
+    height: 2px;
+    box-shadow: 0 0 10px #29d;
+}
+
+.masonry-item {
+  width: 30%;
+  margin-bottom: 10px;
+
+}
+
+.masonry-item img {
+  width: 100%;
+  height: 100%;
+
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+.masonry-item img:hover {
+  width: 102%;
+}
+
+.masonry-item h2 {
+  margin-top: 5px;
+}
