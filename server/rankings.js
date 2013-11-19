@@ -38,12 +38,10 @@ updateArtistRankings = function(artist) {
   for (var i = 1; i <= releaseCount; i++) {
     var releaseIndex = _.indexOf(artist.releases, _.max(artist.releases, 'points'));
     var release = artist.releases[releaseIndex];
-    newRankings.push({
-      releaseType: release.releaseType,
-      releaseName: release.releaseName,
+    newRankings.push(_.extend(release, {
       rank: i,
       points: release.points
-    });
+    }));
 
     console.log(release.releaseName + " is rank " + i + " with " + release.points + " points.");
 

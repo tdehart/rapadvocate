@@ -1,6 +1,32 @@
+var firstRender = true;
+
 Template.artistShow.rendered = function() {
-  $allRankings = $('.all-rankings');
-  $myRankings = $('.my-rankings').hide();
+  if (firstRender) {
+    Session.set('rankingTemplate', 'allRanks');
+    firstRender = false;
+  }
+};
+
+Template.myRankingsTemplate.rendered = function() {
+  $('.sortable').sortable({
+    sort: function() {
+      var $lis = $(this).children('li');
+      $lis.each(function() {
+        var $li = $(this);
+        var hindex = $lis.filter('.ui-sortable-helper').index();
+        if (!$li.is('.ui-sortable-helper')) {
+          var index = $li.index();
+          index = index < hindex ? index + 1 : index;
+
+          $li.val(index);
+
+          if ($li.is('.ui-sortable-placeholder')) {
+            $lis.filter('.ui-sortable-helper').val(index);
+          }
+        }
+      });
+    }
+  });
 };
 
 Template.artistShow.events({
@@ -14,30 +40,13 @@ Template.artistShow.events({
 
   'click .my-ranks-button': function(evt, tmpl) {
     evt.preventDefault();
-    $allRankings.replaceWith($myRankings.show());
-    $('.sortable').sortable({
-      sort: function() {
-        var $lis = $(this).children('li');
-        $lis.each(function() {
-          var $li = $(this);
-          var hindex = $lis.filter('.ui-sortable-helper').index();
-          if (!$li.is('.ui-sortable-helper')) {
-            var index = $li.index();
-            index = index < hindex ? index + 1 : index;
 
-            $li.val(index);
-
-            if ($li.is('.ui-sortable-placeholder')) {
-              $lis.filter('.ui-sortable-helper').val(index);
-            }
-          }
-        });
-      }
-    });
+    Session.set('rankingTemplate', 'myRanks');
   },
 
   'click .save-ranks-button': function(evt, tmpl) {
     evt.preventDefault();
+    Session.set('rankingTemplate', 'allRanks');
 
     var releases = [];
     $("#rank-list li").each(function(index, element) {
@@ -58,16 +67,13 @@ Template.artistShow.events({
     Meteor.call("updateUserRankings", data, function(err, result) {
       if (err) {
         console.log("Error submitting rankings", err);
-      } else {
-        $myRankings.replaceWith($allRankings);
       }
     });
   },
 
   'click .cancel-ranks-button': function(evt, tmpl) {
     evt.preventDefault();
+    Session.set('rankingTemplate', 'allRanks');
     $(".sortable").sortable("cancel");
-    $myRankings.replaceWith($allRankings);
   }
-
 });

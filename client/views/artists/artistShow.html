@@ -1,5 +1,6 @@
 <template name="artistShow">
   <div class="row">
+    {{#constant}}
     <div class="col-lg-3">
       <h1 id="artist-stage-name">{{artist.stageName}}</h1>
       <img src={{artist.artistImage}}>
@@ -33,43 +34,12 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-4 all-rankings">
-      <h3>
-        Overall Rankings
-        {{#if currentUser}} 
-        <button type="button" class="btn btn-default btn-sm my-ranks-button">
-          <span class="glyphicon glyphicon-pencil"></span> My Ranks
-        </button>
-        {{/if}}
-      </h3>
-        <ol>
-        {{#each artist.releases}}
-          <li>
-            {{releaseName}} ({{releaseType}})
-          </li>
-        {{/each}}
-        </ol>
-    </div>
+    {{/constant}}
 
-    {{#if currentUser}}
-    <div class="col-lg-4 my-rankings">
-      <h3>
-        My Rankings
-        <button type="button" class="btn btn-success btn-xs save-ranks-button" data-toggle="tooltip" title="Save">
-          <span class="glyphicon glyphicon-ok"></span>
-        </button>
-        <button type="button" class="btn btn-danger btn-xs cancel-ranks-button" data-toggle="tooltip" title="Cancel">
-          <span class="glyphicon glyphicon-remove"></span>
-        </button>        
-      </h3>
-      <ol id="rank-list" class="sortable">
-        {{#each rankings.releases}}
-          <li>
-            {{releaseName}} ({{releaseType}})
-          </li>
-        {{/each}}
-      </ol>
-    </div>
+    {{#if $.Session.equals 'rankingTemplate' 'allRanks'}}
+      {{>allRankingsTemplate}}
+    {{else}}
+      {{>myRankingsTemplate}}
     {{/if}}
 
     <div class="col-lg-4">
@@ -84,3 +54,47 @@
     </div>    
   </div>
 </template>
+
+<template name="allRankingsTemplate">
+  <div class="col-lg-4 all-rankings">
+    <h3>
+      Overall Rankings
+      {{#if currentUser}} 
+      <button type="button" class="btn btn-default btn-sm my-ranks-button">
+        <span class="glyphicon glyphicon-pencil"></span> My Ranks
+      </button>
+      {{/if}}
+    </h3>
+    <ol>
+    {{#each artist.releases}}
+      <li>
+        {{releaseName}} ({{releaseType}})
+      </li>
+    {{/each}}
+    </ol>
+  </div>
+</template>
+
+<template name="myRankingsTemplate">
+  {{#if currentUser}}
+  <div class="col-lg-4 my-rankings">
+    <h3>
+      My Rankings
+      <button type="button" class="btn btn-success btn-xs save-ranks-button" data-toggle="tooltip" title="Save">
+        <span class="glyphicon glyphicon-ok"></span>
+      </button>
+      <button type="button" class="btn btn-danger btn-xs cancel-ranks-button" data-toggle="tooltip" title="Cancel">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>        
+    </h3>
+    <ol id="rank-list" class="sortable">
+      {{#each rankings.releases}}
+        <li>
+          {{releaseName}} ({{releaseType}})
+        </li>
+      {{/each}}
+    </ol>
+  </div>
+  {{/if}}  
+</template>
+
