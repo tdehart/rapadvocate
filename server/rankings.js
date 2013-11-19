@@ -17,47 +17,37 @@ addUserRankings = function(data) {
 updateArtistRankings = function(artist) {
   _ = lodash;
 
-  var ranks = {};
-
-  //Build an object of ranks with default value of 0; e.g., {"1": 0, "2": 0, "3": 0}
-  for (var i = 1; i <= artist.releases.length; i++) {
-    ranks[i] = 0;
-  }
-
-  //Extend each artist release with the rank object
+  //Extend each artist with borda points to 0
   _.each(artist.releases, function(release) {
-    _.extend(release, ranks);
+    _.extend(release, {"points": 0});
   });
 
-  //Iterate over all rankings for this artist and count number of rankings for each release
+  releaseCount = artist.releases.length;
+
+  //Iterate over all rankings for this artist and tally borda points
   Rankings.find({artistId: artist._id}).forEach(function(ranking) {
-    _.each(ranking.releases, function(rankingRelease) {
-      var artistRelease = _.findWhere(artist.releases, {releaseName: rankingRelease.releaseName});
-      artistRelease[rankingRelease.rank] += 1;
+    _.each(ranking.releases, function(userRankingRelease) {
+      var artistRelease = _.findWhere(artist.releases, {releaseName: userRankingRelease.releaseName});
+      artistRelease.points += (releaseCount - (userRankingRelease.rank - 1));
     });
   });
 
   //Keep track of all new rankings in this object
   var newRankings = [];
-
-  //Retain the original artist.release list length because we'll later be splicing this list
-  var releaseLength = artist.releases.length;
-
-  //For every rank (determined by # of releases) we're going to determine the new artist release rankings
-  for (i = 1; i <= releaseLength; i++) {
-    //Whichever release has the most votes for this rank gets to be this rank
-    //e.g., if MMLP has the most votes for "Rank 1" then MMLP is now "Rank 1"
-    var releaseIndex = _.indexOf(artist.releases, _.max(artist.releases, i));
+  // For every rank (determined by # of releases) we're going to determine the new artist release rankings
+  for (var i = 1; i <= releaseCount; i++) {
+    var releaseIndex = _.indexOf(artist.releases, _.max(artist.releases, 'points'));
     var release = artist.releases[releaseIndex];
     newRankings.push({
       releaseType: release.releaseType,
       releaseName: release.releaseName,
-      rank: i
+      rank: i,
+      points: release.points
     });
 
-    console.log(release.releaseName + " has the most votes for Rank " + i + " with " + release[i] + " votes.");
+    console.log(release.releaseName + " is rank " + i + " with " + release.points + " points.");
 
-    //Remove this release from the list in case there are ties. Every release needs to get a rank.
+    //Remove this release from the list so we can get the next max
     artist.releases.splice(releaseIndex, 1);
   }
 
