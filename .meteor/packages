@@ -5,14 +5,17 @@
 
 standard-app-packages
 preserve-inputs
-bootstrap-3
 underscore-string-latest
 iron-router
 twit
 accounts-password
-accounts-ui
 cron-tick
 lodash
 iron-router-progress
 jquery-imagesloaded
 jquery-masonry
+bootswatch-slate-3
+accounts-base
+accounts-ui-bootstrap-3
+jquery-ui-bootstrap
+jquery-ui

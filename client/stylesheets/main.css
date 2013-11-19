@@ -4,10 +4,6 @@
   text-align: left;
 }
 
-.releases-div {
-  padding-left: 40px;
-}
-
 .artist-label {
   width: 130px;
 }
@@ -22,9 +18,9 @@
 }
 
 #iron-router-progress {
-    background-color : #29d;
+    background-color : #5bc0de;
     height: 2px;
-    box-shadow: 0 0 10px #29d;
+    box-shadow: 0 0 10px #5bc0de;
 }
 
 .masonry-item {

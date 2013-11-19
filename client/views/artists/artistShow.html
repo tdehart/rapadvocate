@@ -1,7 +1,7 @@
 <template name="artistShow">
   <div class="row">
     <div class="col-lg-3">
-      <h2 id="artist-stage-name">{{artist.stageName}}</h2>
+      <h1 id="artist-stage-name">{{artist.stageName}}</h1>
       <img src={{artist.artistImage}}>
       <div class="panel panel-default artist-details">
         <div class="panel-heading">Details</div>
@@ -20,29 +20,40 @@
             {{/if}}
 
             {{#if artist.website}}
-              <li>Website: {{artist.website}}</li>
-            {{/if}}
-
-            {{#if artist.twitterUsername}}
-              <li>Twitter: {{artist.twitterUsername}}</li>
+              <li>Website: <a href="{{artist.website}}" target="_blank">{{artist.website}}</a></li>
             {{/if}}
           </ul>
-          {{#if currentUser}}<button class="btn btn-default edit-button">Edit</button>{{/if}}
+          {{#if currentUser}}<button class="btn btn-default edit-button">Edit Details</button>{{/if}}
         </div>
       </div>
     </div>
-    <div class="col-lg-3 releases-div">
-      <h3>Releases</h3>
+    <div class="col-lg-4 all-rankings">
+      <h3>
+        Overall Rankings 
+        <button type="button" class="btn btn-default btn-sm my-ranks-button">
+          <span class="glyphicon glyphicon-pencil"></span> My Ranks
+        </button>
+      </h3>
         <ol>
         {{#each artist.releases}}
           <li>
-            {{releaseName}} ({{releaseType}}) Rank {{rank}}
+            {{releaseName}} ({{releaseType}})
           </li>
         {{/each}}
         </ol>
+    </div>
 
-      {{#if currentUser}}
-      <h4>My Ranks</h4>
+    {{#if currentUser}}
+    <div class="col-lg-4 my-rankings">
+      <h3>
+        My Rankings
+        <button type="button" class="btn btn-success btn-xs save-ranks-button">
+          <span class="glyphicon glyphicon-ok"></span>
+        </button>
+        <button type="button" class="btn btn-danger btn-xs cancel-ranks-button">
+          <span class="glyphicon glyphicon-remove"></span>
+        </button>        
+      </h3>
       <ol id="rank-list" class="sortable">
         {{#each rankings.releases}}
           <li>
@@ -50,10 +61,10 @@
           </li>
         {{/each}}
       </ol>
-      {{/if}}
     </div>
+    {{/if}}
 
-    <div class="col-lg-5 releases-div">
+    <div class="col-lg-4">
       <h3>Twitter</h3>
       <ul class="unstyled-list">
         {{#each artist.tweets}}
@@ -62,7 +73,6 @@
           </li>
         {{/each}}
       </ul>
-
     </div>    
   </div>
 </template>
