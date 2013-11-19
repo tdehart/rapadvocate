@@ -4,7 +4,7 @@ Template.artistShow.rendered = function() {
 };
 
 Template.artistShow.events({
-  'click .edit-button': function(evt, tmpl) {
+  'click #artist-edit': function(evt, tmpl) {
     evt.preventDefault();
 
     Router.go('artistEdit', {
