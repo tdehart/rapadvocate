@@ -8,9 +8,9 @@ Accounts.onCreateUser(function(options, user) {
     };
 
     addUserRankings(data);
-
-    
   });
+
+  user.username = options.email.split("@")[0];
 
   // We still want the default hook's 'profile' behavior.
   if (options.profile)

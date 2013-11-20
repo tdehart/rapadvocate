@@ -1,6 +1,6 @@
 addTweet = function(data) {
   return Artists.update({
-    twitterUsername: ("@" + data.twitterUsername)
+    twitterUsername: (data.twitterUsername)
   }, {
     $addToSet: {
       tweets: data.tweet

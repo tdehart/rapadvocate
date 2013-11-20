@@ -14,7 +14,11 @@
       "bootswatch-slate-3": {},
       "accounts-ui-bootstrap-3": {},
       "jquery-ui-bootstrap": {},
-      "handlebar-helpers": {}
+      "handlebar-helpers": {},
+      "flash-messages": {},
+      "bootstrap-growl": {},
+      "chatworks": {},
+      "npm": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -81,6 +85,26 @@
         "git": "https://github.com/raix/Meteor-handlebar-helpers.git",
         "tag": "v0.0.9",
         "commit": "71e94c99462b8801a34c5363510758b6ff5f5ac7"
+      },
+      "flash-messages": {
+        "git": "https://github.com/camilosw/flash-messages.git",
+        "tag": "v0.2.1",
+        "commit": "62cf1ee531684808b91dbe3ff15e63f6d5af1c66"
+      },
+      "bootstrap-growl": {
+        "git": "https://github.com/TimHeckel/meteor-bootstrap-growl.git",
+        "tag": "v0.1.1",
+        "commit": "674fd231a46e405f8d4eb463725d8003a02374ec"
+      },
+      "chatworks": {
+        "git": "https://github.com/Pent/chatworks.git",
+        "tag": "v1.1.0",
+        "commit": "47953dc2ca1087753943c63fb4d2d3ec59befcb2"
+      },
+      "npm": {
+        "git": "https://github.com/arunoda/meteor-npm.git",
+        "tag": "v0.2.2",
+        "commit": "ad83acff83385d5ea05997c8bbc2d7493ba4c04e"
       },
       "jquery-ui": {
         "git": "https://github.com/TimHeckel/meteor-jquery-ui.git",
