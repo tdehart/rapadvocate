@@ -73,6 +73,9 @@ Meteor.methods({
 
 //Seed some artists if none are present
 Meteor.startup(function() {
+  Artists.remove({});
+  Rankings.remove({});
+  
   var artists = JSON.parse(Assets.getText("artists.json"));
 
   if (!Artists.find().count()) {

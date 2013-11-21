@@ -1,5 +1,5 @@
 //Create rankings for new user
-Accounts.onCreateUser(function(options, user) {
+Accounts.onCreateUser(function(options, user) { 
   Artists.find().forEach(function(artist) {
     var data = {
       artistId: artist._id,

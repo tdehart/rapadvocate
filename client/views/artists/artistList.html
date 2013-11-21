@@ -1,12 +1,36 @@
 <template name="artists">
-  <div id="masonry-container">
-    {{#each artists}}
-    <div class="masonry-item">
-      {{> artist}}
+  <div class="row">
+    <div class="col-lg-12">
+      <form role="form" class="new-artist">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <input id="new-artist-input" type="text" class="form-control" placeholder="Artist Name">
+          </div>
+        </div>
+      </form>
     </div>
-    {{/each}}
-    
   </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div id="masonry-container">
+        {{#each artists}}
+        {{#if artistImage}}
+        <div class="masonry-item">
+          {{> artist}}
+        </div>
+        {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {{#each artists}}
+    <a href="{{pathFor 'artistShow'}}">
+      <p>{{stageName}}</p>
+    </a>
+    {{/each}}
+  </div>
+  
 </template>
 
 <template name="asdf">

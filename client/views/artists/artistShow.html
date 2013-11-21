@@ -8,9 +8,9 @@
         <div class="panel-heading">
           Details
           {{#if currentUser}}
-<!--           <a href="#" id="artist-edit" class="text-muted">
+          <a href="#" id="artist-edit" class="text-muted">
             edit
-          </a> -->
+          </a>
           {{/if}}
         </div>
         <div class="panel-body">
@@ -77,12 +77,49 @@
     <h4 class="text-muted">Aggregate rankings from all users</h4>
     <ol class="all-ranks-list">
     {{#each artist.releases}}
-      <li class="all-ranks-item">
-        {{releaseName}}
-      </li>
+    <li class="all-ranks-item">
+      {{releaseName}}
+      <span class="text-muted">({{releaseYear}})</span>
+      <div class="release-icon {{releaseType}}" data-toggle="modal" data-target="#release-{{rank}}-modal"></div>
+    </li>
+    <div class="modal fade" id="release-{{rank}}-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">
+              {{releaseName}} ({{releaseYear}})
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div class="well">{{description}}</div>
+            <ul class="list-unstyled listen-links">
+              {{#if spotifyUrl}}
+              <li><a href="{{spotifyUrl}}" class="spotify-link listen-link" target="_blank">Listen on Spotify</a></li>
+              {{/if}}
+
+              {{#if iTunesUrl}}
+              <li><a href="{{iTunesUrl}}" class="itunes-link listen-link" target="_blank">Purchase from iTunes</a></li>
+              {{/if}}
+
+              {{#if amazonUrl}}
+              <li><a href="{{amazonUrl}}" class="amazon-link listen-link" target="_blank">Purchase from Amazon</a></li>
+              {{/if}}
+
+              {{#if mixtapeUrl}}
+              <li><a href="{{mixtapeUrl}}" class="datpiff-link listen-link" target="_blank">Download from DatPiff</a></li>
+              {{/if}}
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
     {{/each}}
     </ol>
   </div>
+
+
 </template>
 
 <template name="myRankingsTemplate">
@@ -99,6 +136,7 @@
     </h3>
     <h4 class="text-muted">Your personal rankings to reorder</h4>
     <ol id="rank-list" class="sortable list-group">
+
       {{#each rankings.releases}}
         <li class="list-group-item">
           {{releaseName}}
@@ -106,6 +144,6 @@
       {{/each}}
     </ol>
   </div>
-  {{/if}}  
+  {{/if}}
 </template>
 

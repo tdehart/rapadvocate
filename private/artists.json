@@ -14,77 +14,78 @@
         "releaseName": "Infinite",
         "releaseType": "Album",
         "releaseYear": "1996",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": ""
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/The-Slim-Shady-LP-Eminem/dp/B00000I5JQ",
+        "iTunesUrl": "https://itunes.apple.com/us/album/the-slim-shady-lp/id360678",
         "mixtapeUrl": "",
         "rank": 2,
         "releaseName": "The Slim Shady LP",
         "releaseType": "Album",
         "releaseYear": "1999",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/0JnN0ZgNrYxz3Gk725HiAd"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/The-Marshall-Mathers-LP-Eminem/dp/B00004T9UF",
+        "iTunesUrl": "https://itunes.apple.com/us/album/the-marshall-mathers-lp/id362114",
         "mixtapeUrl": "",
         "rank": 3,
         "releaseName": "The Marshall Mathers LP",
         "releaseType": "Album",
         "releaseYear": "2000",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/6t7956yu5zYf5A829XRiHC"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/The-Eminem-Show/dp/B00006690G",
+        "iTunesUrl": "https://itunes.apple.com/us/album/the-eminem-show/id111092",
         "mixtapeUrl": "",
         "rank": 4,
         "releaseName": "The Eminem Show",
         "releaseType": "Album",
         "releaseYear": "2002",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/1ftvBBcu7jYIvXyt3JWB8S"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Encore-Deluxe-Edition-Eminem/dp/B00065XJ52",
+        "iTunesUrl": "https://itunes.apple.com/us/album/encore-deluxe-version/id28690630",
         "mixtapeUrl": "",
         "rank": 5,
         "releaseName": "Encore",
         "releaseType": "Album",
         "releaseYear": "2004",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/2k6lJkGsEEHhBOEPObe6Uq"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Relapse-Eminem/dp/B00192M9FC",
+        "iTunesUrl": "https://itunes.apple.com/us/album/relapse/id315867000",
         "mixtapeUrl": "",
         "rank": 6,
         "releaseName": "Relapse",
         "releaseType": "Album",
         "releaseYear": "2009",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/0dSi4mEwlCG6cSfWLT6rZG"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Recovery-Eminem/dp/B003KUSUG8",
+        "iTunesUrl": "https://itunes.apple.com/us/album/recovery-deluxe-edition/id378423506",
         "mixtapeUrl": "",
         "rank": 7,
         "releaseName": "Recovery",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/3PogVmhNucYNfyywZvTd7F"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/The-Marshall-Mathers-LP2-Deluxe/dp/B00FKAA3MA",
+        "iTunesUrl": "https://itunes.apple.com/us/album/marshall-mathers-lp2-deluxe/id731756766",
         "mixtapeUrl": "",
         "rank": 8,
         "releaseName": "The Marshall Mathers LP 2",
         "releaseType": "Album",
         "releaseYear": "2013",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/6DN7GcZF1HywzrkGN6Eeqk"
       }
     ],
     "stageName": "Eminem",
@@ -101,33 +102,47 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Kendrick-Lamar-Kendrick-Lamar-EP-mixtape.308308.html",
         "rank": 1,
         "releaseName": "Kendrick Lamar EP",
-        "releaseType": "Album",
+        "releaseType": "Mixtape",
         "releaseYear": "2009",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "The Kendrick Lamar EP features fifteen tracks featuring artists such as JAY ROCK, AB SOUL, SCHOOLBOY Q, Big Pooh, BJ The Chicago Kid, Punch, Javonte, Interlude, and Angela McCluskey.  This is the third installment of mixtapes from Kendrick Lamar after his first two were under his stage name K.Dot.  Dr. Dre has been credited for calling Kendrick out for K.Dot and to change his name to Kendrick Lamar."
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Section-80-Kendrick-Lamar/dp/B005AJ8A94",
+        "iTunesUrl": "https://itunes.apple.com/us/album/section.80/id447516359",
         "mixtapeUrl": "",
         "rank": 2,
         "releaseName": "Section.80",
         "releaseType": "Album",
         "releaseYear": "2011",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/13WjgUEEAQp0d9JqojlWp1",
+        "description": "Section.80 is the debut studio album by American hip hop recording artist Kendrick Lamar, released exclusively through the iTunes Store on July 2, 2011, under Top Dawg Entertainment. The concept album features lyrical themes delivered by Lamar such as racism and medication tolerance, and was well received by contemporary music critics."
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Good-Kid-M-A-A-D-Kendrick-Lamar/dp/B0090X4HES",
+        "iTunesUrl": "https://itunes.apple.com/us/album/good-kid-m.a.a.d.-city-deluxe/id622710488",
         "mixtapeUrl": "",
         "rank": 3,
         "releaseName": "Good Kid, M.A.A.D City",
         "releaseType": "Album",
         "releaseYear": "2012",
-        "spotifyUrl": ""
-      }
+        "spotifyUrl": "https://play.spotify.com/album/1DqhWr73Fh5yoNzKLas0G3",
+        "description": "Good Kid, M.A.A.D City (stylized as good kid, m.A.A.d city) is the second studio album by American rapper Kendrick Lamar. The album was released on October 22, 2012, by Top Dawg Entertainment, Aftermath Entertainment, and was distributed by Interscope Records. The album serves as Lamar's major label debut, after his signing to Aftermath and Interscope in early 2012. Upon its release, Good Kid, M.A.A.D City received rave reviews from music critics, who praised its thematic scope and Lamar's lyrics."
+      },
+      {
+        "amazonUrl": "http://www.amazon.com/Overly-Dedicated-Explicit-Kendrick-Lamar/dp/B004332E2M",
+        "iTunesUrl": "https://itunes.apple.com/us/album/overly-dedicated/id392386303",
+        "mixtapeUrl": "http://www.datpiff.com/Kendrick-Lamar-Overly-Dedicated-mixtape.152921.html",
+        "rank": 4,
+        "releaseName": "Overly Dedicated",
+        "releaseType": "Album",
+        "releaseYear": "2010",
+        "spotifyUrl": "https://play.spotify.com/album/5wwQGuazQaPtxOddReACsV",
+        "description": "Overly Dedicated (stylized O(verly) D(edicated) and often referred to as O.D.) is the fourth mixtape by American hip hop recording artist Kendrick Lamar, released September 14, 2010, via Top Dawg Entertainment. The album features guest appearances from Dash Snow, Jhené Aiko, Schoolboy Q, Ab-Soul, Dom Kennedy and MURS, among others."
+      }      
     ],
     "stageName": "Kendrick Lamar",
     "twitterUsername": "kendricklamar",
@@ -141,34 +156,34 @@
     "realName": "Kanye Omari West",
     "releases": [
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/College-Dropout-Kanye-West/dp/B0001AP12G/",
+        "iTunesUrl": "https://itunes.apple.com/us/album/the-college-dropout/id5926607",
         "mixtapeUrl": "",
         "rank": 1,
         "releaseName": "The College Dropout",
         "releaseType": "Album",
         "releaseYear": "2004",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/3ff2p3LnR6V7m6BinwhNaQ"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Late-Registration-Kanye-West/dp/B0009WPKY0",
+        "iTunesUrl": "https://itunes.apple.com/us/album/late-registration/id79483267",
         "mixtapeUrl": "",
         "rank": 2,
         "releaseName": "Late Registration",
         "releaseType": "Album",
         "releaseYear": "2005",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/4GRDFQ9HRoO0by8H0r2a3I"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Graduation-Kanye-West/dp/B000RG1FMO",
+        "iTunesUrl": "https://itunes.apple.com/us/album/graduation/id401263134",
         "mixtapeUrl": "",
         "rank": 3,
         "releaseName": "Graduation",
         "releaseType": "Album",
         "releaseYear": "2007",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/0FnTw6TY6iB5AHATPzCYkd"
       },
       {
         "amazonUrl": "",
@@ -181,24 +196,24 @@
         "spotifyUrl": ""
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/808s-Heartbreak-Kanye-West/dp/B001FBIPFA",
+        "iTunesUrl": "https://itunes.apple.com/gb/album/808s-heartbreak/id296840012",
         "mixtapeUrl": "",
         "rank": 5,
         "releaseName": "My Beautiful Dark Twisted Fantasy",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/2JK89jt4unItFroOr0kT3g"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Yeezus-Kanye-West/dp/B00CV5ZPA2",
+        "iTunesUrl": "https://itunes.apple.com/us/album/yeezus/id662392801",
         "mixtapeUrl": "",
         "rank": 6,
         "releaseName": "Yeezus",
         "releaseType": "Album",
         "releaseYear": "2013",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/0XTAmejG8F97wF5MWoVbaY"
       }
     ],
     "stageName": "Kanye West",
@@ -213,34 +228,34 @@
     "realName": "Jonathan Davis",
     "releases": [
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Amplified-Q-Tip/dp/B002HMHRTG",
+        "iTunesUrl": "https://itunes.apple.com/us/album/amplified/id279722147",
         "mixtapeUrl": "",
         "rank": 1,
         "releaseName": "Amplified",
         "releaseType": "Album",
         "releaseYear": "1999",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/2SGHbXwTsuIOoAdBPsnIDW"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/The-Renaissance-Q-Tip/dp/B001GRTPKC",
+        "iTunesUrl": "https://itunes.apple.com/us/album/the-renaissance/id294662648",
         "mixtapeUrl": "",
         "rank": 2,
         "releaseName": "The Renaissance",
         "releaseType": "Album",
         "releaseYear": "2008",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/5mGIqZVosIQRNgGZqFY2cz"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Kamaal-Abstract-Q-Tip/dp/B002FA150M",
+        "iTunesUrl": "https://itunes.apple.com/us/album/kamaal-abstract-bonus-track/id328227194",
         "mixtapeUrl": "",
         "rank": 3,
         "releaseName": "Kamaal/The Abstract",
         "releaseType": "Album",
         "releaseYear": "2009",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/2ytFxM5btEGieFNmhY6BZO"
       }
     ],
     "stageName": "Q-Tip",
@@ -255,17 +270,17 @@
     "realName": "Dwayne Michael Carter, Jr.",
     "releases": [
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Tha-Block-Hot-Lil-Wayne/dp/B00002MYVJ",
+        "iTunesUrl": "https://itunes.apple.com/us/album/tha-block-is-hot/id318625144",
         "mixtapeUrl": "",
         "rank": 1,
         "releaseName": "Tha Block Is Hot",
         "releaseType": "Album",
         "releaseYear": "1999",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/75s3OxagI6DX8OKLKymPLN"
       },
       {
-        "amazonUrl": "",
+        "amazonUrl": "http://www.amazon.com/Lights-Out-Lil-Wayne/dp/B000053UDL",
         "iTunesUrl": "",
         "mixtapeUrl": "",
         "rank": 2,
@@ -275,99 +290,99 @@
         "spotifyUrl": ""
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/500-Degreez-Explicit-Version-Wayne/dp/B000V6AEZE",
+        "iTunesUrl": "https://itunes.apple.com/us/album/500-degreez/id13660396",
         "mixtapeUrl": "",
         "rank": 3,
         "releaseName": "500 Degreez",
         "releaseType": "Album",
         "releaseYear": "2002",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/1bBRCQgqsiAlbWrDZp5tDf"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Tha-Carter-Lil-Wayne/dp/B00027JYPI",
+        "iTunesUrl": "https://itunes.apple.com/us/album/tha-carter/id13336018",
         "mixtapeUrl": "",
         "rank": 4,
         "releaseName": "Tha Carter",
         "releaseType": "Album",
         "releaseYear": "2004",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/5POcKy926GgzFHZpGptJac"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Tha-Carter-2-Lil-Wayne/dp/B000BLI4UG",
+        "iTunesUrl": "https://itunes.apple.com/us/album/tha-carter-ii/id98017295",
         "mixtapeUrl": "",
         "rank": 5,
         "releaseName": "Tha Carter II",
         "releaseType": "Album",
         "releaseYear": "2005",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/0d20RT5sOfbLsBKPCTNx4s"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Like-Father-Son-Birdman/dp/B000HT35SS",
+        "iTunesUrl": "https://itunes.apple.com/us/album/like-father-like-son/id203314334",
         "mixtapeUrl": "",
         "rank": 6,
         "releaseName": "Like Father, Like Son",
         "releaseType": "Album",
         "releaseYear": "2006",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/0riHF8KigcDZdKmUsZXEeo"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Tha-Carter-III-Lil-Wayne/dp/B001E4IY3Q",
+        "iTunesUrl": "https://itunes.apple.com/us/album/tha-carter-iii/id287818308",
         "mixtapeUrl": "",
         "rank": 7,
         "releaseName": "Tha Carter III",
         "releaseType": "Album",
         "releaseYear": "2008",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/1Do3y8IAcbYOToYQJnGwSO"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Rebirth-Lil-Wayne/dp/B001TD1XWG",
+        "iTunesUrl": "https://itunes.apple.com/us/album/rebirth-deluxe-version/id350833659",
         "mixtapeUrl": "",
         "rank": 8,
         "releaseName": "Rebirth",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/2ydmGsz8W6qDq2UgotdxzR"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Am-Not-Human-Being/dp/B00437DYLI",
+        "iTunesUrl": "https://itunes.apple.com/us/album/i-am-not-a-human-being/id402749131",
         "mixtapeUrl": "",
         "rank": 9,
         "releaseName": "I Am Not a Human Being",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/6Pqlfg42Sc3ElNuyt5NUiK"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Tha-Carter-IV-Lil-Wayne/dp/B004R0MF0W",
+        "iTunesUrl": "https://itunes.apple.com/us/album/tha-carter-iv-deluxe-edition/id459904774",
         "mixtapeUrl": "",
         "rank": 10,
         "releaseName": "Tha Carter IV",
         "releaseType": "Album",
         "releaseYear": "2011",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/7oc6i8xUILaWwQ5BJMZS3c"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Am-Not-Human-Being-II/dp/B00BDZV9M4",
+        "iTunesUrl": "https://itunes.apple.com/us/album/i-am-not-human-being-ii-deluxe/id620476823",
         "mixtapeUrl": "",
         "rank": 11,
         "releaseName": "I Am Not a Human Being II",
         "releaseType": "Album",
         "releaseYear": "2013",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/6Pqlfg42Sc3ElNuyt5NUiK"
       },
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-Da-Drought-mixtape.14663.html",
         "rank": 12,
         "releaseName": "Da Drought",
         "releaseType": "Mixtape",
@@ -377,7 +392,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-Da-Drought-2-mixtape.14546.html",
         "rank": 13,
         "releaseName": "Da Drought 2",
         "releaseType": "Mixtape",
@@ -387,7 +402,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-The-Prefix-mixtape.1800.html",
         "rank": 14,
         "releaseName": "The Prefix",
         "releaseType": "Mixtape",
@@ -397,7 +412,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-The-Suffix-mixtape.406.html",
         "rank": 15,
         "releaseName": "The Suffix",
         "releaseType": "Mixtape",
@@ -407,7 +422,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-The-Dedication-mixtape.51.html",
         "rank": 16,
         "releaseName": "The Dedication",
         "releaseType": "Mixtape",
@@ -417,7 +432,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-The-Dedication-2-mixtape.799.html",
         "rank": 17,
         "releaseName": "Dedication 2",
         "releaseType": "Mixtape",
@@ -427,7 +442,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-Da-Drought-3-Disc-1-mixtape.4313.html",
         "rank": 18,
         "releaseName": "Da Drought 3",
         "releaseType": "Mixtape",
@@ -437,7 +452,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-Dedication-3-mixtape.23950.html",
         "rank": 19,
         "releaseName": "Dedication 3",
         "releaseType": "Mixtape",
@@ -447,7 +462,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-No-Ceilings-mixtape.75250.html",
         "rank": 20,
         "releaseName": "No Ceilings",
         "releaseType": "Mixtape",
@@ -457,7 +472,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-Sorry-4-The-Wait-mixtape.250654.html",
         "rank": 21,
         "releaseName": "Sorry 4 the Wait",
         "releaseType": "Mixtape",
@@ -467,7 +482,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-Dedication-4-mixtape.385544.html",
         "rank": 22,
         "releaseName": "Dedication 4",
         "releaseType": "Mixtape",
@@ -477,7 +492,7 @@
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/Lil-Wayne-Dedication-5-mixtape.525016.html",
         "rank": 23,
         "releaseName": "Dedication 5",
         "releaseType": "Mixtape",
@@ -497,29 +512,29 @@
     "realName": "Scott Mescudi",
     "releases": [
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Man-Moon-Combo-Deluxe-Edition/dp/B002FOQY04",
+        "iTunesUrl": "https://itunes.apple.com/us/album/man-on-moon-end-day-expanded/id330339468",
         "mixtapeUrl": "",
         "rank": 1,
         "releaseName": "MOTM: The End of Day",
         "releaseType": "Album",
         "releaseYear": "2009",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/6oPPKtAwNNlkW4wwHfQDfM"
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Man-On-The-Moon-Legend/dp/B003P2VGN0",
+        "iTunesUrl": "https://itunes.apple.com/us/album/man-on-moon-vol.-ii-legend/id401679959",
         "mixtapeUrl": "",
         "rank": 2,
         "releaseName": "MOTM II: The Legend of Mr. Rager",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/08eM9GRdr5BCCHNqS3Wwud"
       },
       {
         "amazonUrl": "",
         "iTunesUrl": "",
-        "mixtapeUrl": "",
+        "mixtapeUrl": "http://www.datpiff.com/KiD-CuDi-A-Kid-Named-Cudi-mixtape.28404.html",
         "rank": 3,
         "releaseName": "A Kid Named Cudi",
         "releaseType": "Mixtape",
@@ -527,14 +542,14 @@
         "spotifyUrl": ""
       },
       {
-        "amazonUrl": "",
-        "iTunesUrl": "",
+        "amazonUrl": "http://www.amazon.com/Indicud-Kid-Cudi/dp/B00BYISRBG",
+        "iTunesUrl": "https://itunes.apple.com/us/album/indicud/id626561637",
         "mixtapeUrl": "",
         "rank": 4,
         "releaseName": "Indicud",
         "releaseType": "Album",
         "releaseYear": "2013",
-        "spotifyUrl": ""
+        "spotifyUrl": "https://play.spotify.com/album/262o5a05pMUDSV2uzo5EwQ"
       }
     ],
     "stageName": "Kid Cudi",
