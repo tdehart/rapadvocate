@@ -1,5 +1,5 @@
 //Create rankings for new user
-Accounts.onCreateUser(function(options, user) { 
+Accounts.onCreateUser(function(options, user) {
   Artists.find().forEach(function(artist) {
     var data = {
       artistId: artist._id,
@@ -17,4 +17,13 @@ Accounts.onCreateUser(function(options, user) {
     user.profile = options.profile;
 
   return user;
+});
+
+Meteor.startup(function() {
+  var user = Meteor.users.findOne({username: "tdehart"});
+
+  if (user) {
+    Roles.addUsersToRoles(user._id, 'admin');
+  }
+  
 });

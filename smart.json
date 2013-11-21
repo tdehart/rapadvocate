@@ -16,6 +16,7 @@
     "flash-messages": {},
     "bootstrap-growl": {},
     "chatworks": {},
-    "npm": {}
+    "npm": {},
+    "roles": {}
   }
 }

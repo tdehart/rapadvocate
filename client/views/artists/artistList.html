@@ -1,4 +1,5 @@
 <template name="artists">
+  {{#if isInRole 'admin'}}
   <div class="row">
     <div class="col-lg-12">
       <form role="form" class="new-artist">
@@ -10,6 +11,8 @@
       </form>
     </div>
   </div>
+  {{/if}}
+  
   <div class="row">
     <div class="col-lg-12">
       <div id="masonry-container">
@@ -23,6 +26,8 @@
       </div>
     </div>
   </div>
+
+  {{#if isInRole 'admin'}}
   <div class="row">
     {{#each artists}}
     <a href="{{pathFor 'artistShow'}}">
@@ -30,19 +35,9 @@
     </a>
     {{/each}}
   </div>
+  {{/if}}
   
 </template>
-
-<template name="asdf">
-{{#if currentUser}}
-  <form class="new-artist">
-    <div class="form-group">
-      <input type="text" class="form-control" id="new-artist-input" placeholder="Enter artist name">
-    </div>
-  </form>
-  {{/if}}
-</template>
-
 
 <template name="artist">
   <a href="{{pathFor 'artistShow'}}">

@@ -7,7 +7,7 @@
       <div class="panel panel-default artist-details">
         <div class="panel-heading">
           Details
-          {{#if currentUser}}
+          {{#if isInRole 'admin'}}
           <a href="#" id="artist-edit" class="text-muted">
             edit
           </a>
@@ -16,15 +16,15 @@
         <div class="panel-body">
           <ul class="list-unstyled">
             {{#if artist.realName}}
-              <li>Real Name: {{artist.realName}}</li>
+              <li>Real Name: <strong>{{artist.realName}}</strong></li>
             {{/if}}
 
             {{#if artist.birthdate}}
-              <li>Born: {{artist.birthdate}}</li>
+              <li>Born: <strong>{{artist.birthdate}}</strong></li>
             {{/if}}
 
             {{#if artist.birthplace}}
-              <li>Birthplace: {{artist.birthplace}}</li>
+              <li>Birthplace: <strong>{{artist.birthplace}}</strong></li>
             {{/if}}
 
             {{#if artist.website}}
@@ -68,7 +68,7 @@
   <div class="col-lg-4 all-rankings artist-column">
     <h3>
       Overall Rankings
-      {{#if currentUser}} 
+      {{#if currentUser}}
       <button type="button" class="btn btn-default btn-sm my-ranks-button">
         <span class="glyphicon glyphicon-pencil"></span> My Ranks
       </button>
@@ -77,10 +77,10 @@
     <h4 class="text-muted">Aggregate rankings from all users</h4>
     <ol class="all-ranks-list">
     {{#each artist.releases}}
-    <li class="all-ranks-item">
+    <li class="all-ranks-item" data-toggle="modal" data-target="#release-{{rank}}-modal">
       {{releaseName}}
       <span class="text-muted">({{releaseYear}})</span>
-      <div class="release-icon {{releaseType}}" data-toggle="modal" data-target="#release-{{rank}}-modal"></div>
+      <div class="release-icon {{releaseType}}"></div>
     </li>
     <div class="modal fade" id="release-{{rank}}-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -92,7 +92,13 @@
             </h4>
           </div>
           <div class="modal-body">
-            <div class="well">{{description}}</div>
+            <div class="well">
+              {{#if description}}
+                {{description}}
+              {{else}}
+                No description yet.
+              {{/if}}
+            </div>
             <ul class="list-unstyled listen-links">
               {{#if spotifyUrl}}
               <li><a href="{{spotifyUrl}}" class="spotify-link listen-link" target="_blank">Listen on Spotify</a></li>
