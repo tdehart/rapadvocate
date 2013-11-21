@@ -4,7 +4,6 @@
     "underscore-string-latest": {},
     "iron-router": {},
     "twit": {},
-    "cron-tick": {},
     "lodash": {},
     "iron-router-progress": {},
     "jquery-imagesloaded": {},
@@ -15,7 +14,6 @@
     "handlebar-helpers": {},
     "flash-messages": {},
     "bootstrap-growl": {},
-    "chatworks": {},
     "npm": {},
     "roles": {}
   }

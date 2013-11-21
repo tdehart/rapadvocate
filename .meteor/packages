@@ -9,7 +9,6 @@ underscore-string-latest
 iron-router
 twit
 accounts-password
-cron-tick
 lodash
 iron-router-progress
 jquery-imagesloaded
