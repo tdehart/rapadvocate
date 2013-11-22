@@ -1,75 +1,60 @@
 <template name="artistShow">
   <div class="row">
     {{#constant}}
-    <div class="col-lg-3">
-      <h1 id="artist-stage-name">{{artist.stageName}}</h1>
-      <img src={{artist.artistImage}}>
-      <div class="panel panel-default artist-details">
-        <div class="panel-heading">
-          Details
-          {{#if isInRole 'admin'}}
-          <a href="#" id="artist-edit" class="text-muted">
-            edit
-          </a>
-          {{/if}}
-        </div>
-        <div class="panel-body">
-          <ul class="list-unstyled">
-            {{#if artist.realName}}
-              <li>Real Name: <strong>{{artist.realName}}</strong></li>
-            {{/if}}
-
-            {{#if artist.birthdate}}
-              <li>Born: <strong>{{artist.birthdate}}</strong></li>
-            {{/if}}
-
-            {{#if artist.birthplace}}
-              <li>Birthplace: <strong>{{artist.birthplace}}</strong></li>
-            {{/if}}
-
-            {{#if artist.website}}
-              <li>Website: <a href="{{artist.website}}" target="_blank">{{artist.website}}</a></li>
-            {{/if}}
-          </ul>
-        </div>
-      </div>
-    </div>
+      {{>artistDetails}}
     {{/constant}}
 
     {{#if $.Session.equals 'rankingTemplate' 'allRanks'}}
-      {{>allRankingsTemplate}}
+      {{>allRankings}}
     {{else}}
-      {{>myRankingsTemplate}}
+      {{>myRankings}}
     {{/if}}
 
-    <div class="col-lg-4 artist-column">
-      <h3>Twitter 
-        <a href="http://twitter.com/{{artist.twitterUsername}}" target="_blank">
-          @{{artist.twitterUsername}}
+    {{>twitterFeed}}
+</template>
+
+<template name="artistDetails">
+  <div class="col-lg-3 artist-details-col">
+    <h1 id="artist-stage-name">{{artist.stageName}}</h1>
+    <img src={{artist.artistImage}}>
+    <div class="panel panel-default artist-details">
+      <div class="panel-heading">
+        Details
+        {{#if isInRole 'admin'}}
+        <a href="#" id="artist-edit" class="text-muted">
+          edit
         </a>
-      </h3>
-      <h4 class="text-muted">Live Twitter Stream</h3>
-      <ul class="list-unstyled">
-        {{#each artist.tweets}}
-          <li class="tweet">
-            {{{text}}} <span class="text-muted">{{createdAt}}</span>
-          </li>
-        {{else}}
-          <li class="tweet">
-            No tweets yet...
-          </li>
-        {{/each}}
-      </ul>
+        {{/if}}
+      </div>
+      <div class="panel-body">
+        <ul class="list-unstyled">
+          {{#if artist.realName}}
+          <li>Real Name: <strong>{{artist.realName}}</strong></li>
+          {{/if}}
+
+          {{#if artist.birthdate}}
+          <li>Born: <strong>{{artist.birthdate}}</strong></li>
+          {{/if}}
+
+          {{#if artist.birthplace}}
+          <li>Birthplace: <strong>{{artist.birthplace}}</strong></li>
+          {{/if}}
+
+          {{#if artist.website}}
+          <li>Website: <a href="{{artist.website}}" target="_blank">{{artist.website}}</a></li>
+          {{/if}}
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
-<template name="allRankingsTemplate">
+<template name="allRankings">
   <div class="col-lg-4 all-rankings artist-column">
     <h3>
       Overall Rankings
       {{#if currentUser}}
-      <button type="button" class="btn btn-default btn-sm my-ranks-button">
+      <button type="button" class="btn btn-warning btn-sm my-ranks-button">
         <span class="glyphicon glyphicon-pencil"></span> My Ranks
       </button>
       {{/if}}
@@ -80,16 +65,17 @@
     <li class="all-ranks-item" data-toggle="modal" data-target="#release-{{rank}}-modal">
       {{releaseName}}
       <span class="text-muted">({{releaseYear}})</span>
-      <div class="release-icon {{releaseType}}"></div>
+      <div class="release-icon {{releaseType}}" data-toggle="tooltip"></div>
     </li>
+
     <div class="modal fade" id="release-{{rank}}-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">
+            <h2 class="modal-title" id="myModalLabel">
               {{releaseName}} ({{releaseYear}})
-            </h4>
+            </h2>
           </div>
           <div class="modal-body">
             <div class="well">
@@ -116,19 +102,17 @@
               <li><a href="{{mixtapeUrl}}" class="datpiff-link listen-link" target="_blank">Download from DatPiff</a></li>
               {{/if}}
             </ul>
-            
           </div>
         </div>
       </div>
     </div>
+
     {{/each}}
     </ol>
   </div>
-
-
 </template>
 
-<template name="myRankingsTemplate">
+<template name="myRankings">
   {{#if currentUser}}
   <div class="col-lg-4 my-rankings artist-column">
     <h3>
@@ -141,15 +125,36 @@
       </button>        
     </h3>
     <h4 class="text-muted">Your personal rankings to reorder</h4>
-    <ol id="rank-list" class="sortable list-group">
+    <ol class="sortable list-group my-ranks-list">
 
       {{#each rankings.releases}}
-        <li class="list-group-item">
-          {{releaseName}}
-        </li>
+      <li class="list-group-item">
+        {{releaseName}}
+      </li>
       {{/each}}
     </ol>
   </div>
   {{/if}}
 </template>
 
+<template name="twitterFeed">
+  <div class="col-lg-4 artist-column">
+    <h3>Twitter 
+      <a href="http://twitter.com/{{artist.twitterUsername}}">
+        @{{artist.twitterUsername}}
+      </a>
+    </h3>
+    <h4 class="text-muted">Live Twitter Stream</h4>
+    <ul class="list-unstyled tweets">
+      {{#each artist.tweets}}
+      <li class="tweet">
+        {{{text}}} <span class="text-muted"><a href="{{detailsLink}}" class="twitter-details-link">{{createdAt}}</a></span>
+      </li>
+      {{else}}
+      <li class="tweet">
+        No tweets yet...
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>

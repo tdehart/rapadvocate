@@ -8,6 +8,14 @@ addTweet = function(data) {
   });
 };
 
+setTwitterUserId = function(twitterUser) {
+  Artists.update({
+    twitterUsername: twitterUser.screen_name
+  }, {
+    $set: {twitterId: twitterUser.id}
+  });
+};
+
 Meteor.methods({
   addArtist: function(artist) {
     if (!Meteor.user()) {

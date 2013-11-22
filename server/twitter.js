@@ -12,16 +12,34 @@ Meteor.startup(function() {
   var twitterText = Meteor.require('twitter-text');
   var moment = Meteor.require('moment');
 
+  // var twitterNames = _.map(Artists.find().fetch(), function(artist) {
+  //   return artist.twitterUsername;
+  // });
+
+  // twit.get('users/lookup', {
+  //   screen_name: twitterNames.join(',')
+  // }, function(err, users) {
+  //   Fiber(function() {
+  //     if (err) {
+  //       console.log("Error", err);
+  //     }
+  //     _.each(users, function(user) {
+  //       setTwitterUserId(user);
+  //     });
+  //   }).run();
+  // });
+
   Artists.find().forEach(function(artist) {
     twit.get('statuses/user_timeline', {
       screen_name: artist.twitterUsername,
-      count: 10
+      count: 8
     }, function(err, tweets) {
       Fiber(function() {
         if (err) {
           console.log("Error", err);
         }
         _.each(tweets, function(tweet) {
+          console.log(tweet);
           var tweetTime = tweet.created_at;
           var time = moment(new Date(tweetTime)).fromNow();
           data = {
@@ -29,7 +47,9 @@ Meteor.startup(function() {
             tweet: {
               text: twitterText.autoLink(tweet.text),
               createdAt: time,
-              raw_time: tweetTime
+              rawTime: tweetTime,
+              detailsId: tweet.id_str,
+              detailsLink: 'https://twitter.com/' + artist.twitterUsername + '/status/' + tweet.id_str
             }
           };
 
@@ -42,13 +62,25 @@ Meteor.startup(function() {
 
   // console.log(twit);
 
-  // var stream = twit.stream('statuses/filter', {
-  //   track: 'mango'
+  // var twitterIds = _.map(Artists.find().fetch(), function(artist) {
+  //   return artist.twitterId;
   // });
 
 
+  // var stream = twit.stream('statuses/filter', {
+  //   follow: twitterIds.join(',')
+  // });
+
+  // console.log(twitterIds);
+
   // stream.on('tweet', function(tweet) {
-  //   console.log(tweet);
+  //   if (tweet.retweeted_status) {
+  //     console.log('retweet');
+  //   } else {
+  //     console.log('real tweet');
+  //   }
+
+  //   console.log(tweet.user.screen_name, tweet.text);
   // });
 
 });

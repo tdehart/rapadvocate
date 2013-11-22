@@ -5,11 +5,26 @@ Template.artistShow.rendered = function() {
     Session.set('rankingTemplate', 'allRanks');
     firstRender = false;
   }
-
-  $(".tweet").html(this.data.text);
 };
 
-Template.myRankingsTemplate.rendered = function() {
+Template.allRankings.rendered = function() {
+  $(".Album").tooltip({
+    title: 'Studio Album',
+    trigger: "hover",
+    placement: "right",
+    container: "body"
+  });
+
+  $(".Mixtape").tooltip({
+    title: 'Mixtape',
+    trigger: "hover",
+    placement: "right",
+    container: "body"
+  });
+
+};
+
+Template.myRankings.rendered = function() {
   $('.sortable').sortable({
     sort: function() {
         var $lis = $(this).children('li');
@@ -29,6 +44,10 @@ Template.myRankingsTemplate.rendered = function() {
         });
       }
   });
+};
+
+Template.twitterFeed.rendered = function() {
+  $('.tweets a').attr ('target', '_blank');
 };
 
 Template.artistShow.events({
@@ -51,7 +70,7 @@ Template.artistShow.events({
     Session.set('rankingTemplate', 'allRanks');
 
     var releases = [];
-    $("#rank-list li").each(function(index, element) {
+    $(".my-ranks-list li").each(function(index, element) {
       releases.push({
         releaseName: _.str.trim($(element).text()),
         rank: index + 1

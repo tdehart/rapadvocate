@@ -1,6 +1,6 @@
 [
   {
-    "artistImage": "http://i.imgur.com/RkyFH8c.jpg",
+    "artistImage": "http://i.imgur.com/kOelxOc.jpg",
     "birthdate": "1972-10-17",
     "birthplace": "Detroit, MI",
     "cleanUrlName": "eminem",
@@ -100,7 +100,7 @@
     "website": "http://eminem.com"
   },
   {
-    "artistImage": "http://i.imgur.com/kK56ihl.jpg",
+    "artistImage": "http://i.imgur.com/Ikbyzrz.jpg",
     "birthdate": "1987-06-17",
     "birthplace": "Compton, CA",
     "cleanUrlName": "kendrick-lamar",
@@ -145,7 +145,7 @@
         "mixtapeUrl": "http://www.datpiff.com/Kendrick-Lamar-Overly-Dedicated-mixtape.152921.html",
         "rank": 4,
         "releaseName": "Overly Dedicated",
-        "releaseType": "Album",
+        "releaseType": "Mixtape",
         "releaseYear": "2010",
         "spotifyUrl": "https://play.spotify.com/album/5wwQGuazQaPtxOddReACsV",
         "description": "Overly Dedicated (stylized O(verly) D(edicated) and often referred to as O.D.) is the fourth mixtape by American hip hop recording artist Kendrick Lamar, released September 14, 2010, via Top Dawg Entertainment. The album features guest appearances from Dash Snow, Jhené Aiko, Schoolboy Q, Ab-Soul, Dom Kennedy and MURS, among others."
@@ -233,7 +233,7 @@
     "website": "http://kanyewest.com/"
   },
   {
-    "artistImage": "http://i.imgur.com/Nu8xIC6.jpg",
+    "artistImage": "http://i.imgur.com/X7hOXnM.jpg",
     "birthdate": "1970-04-10",
     "birthplace": "Queens, NY",
     "cleanUrlName": "q-tip",
@@ -247,7 +247,8 @@
         "releaseName": "Amplified",
         "releaseType": "Album",
         "releaseYear": "1999",
-        "spotifyUrl": "https://play.spotify.com/album/2SGHbXwTsuIOoAdBPsnIDW"
+        "spotifyUrl": "https://play.spotify.com/album/2SGHbXwTsuIOoAdBPsnIDW",
+        "description": "Amplified is the debut solo album of American hip hop artist Q-Tip, released November 23, 1999, on Arista Records. The album was recorded following the dissolution of Q-Tip's former group, A Tribe Called Quest. Production was primarily handled by Q-Tip and J Dilla, who had previously produced for A Tribe Called Quest. The album debuted at number 28 on the U.S. Billboard 200 chart, selling 89,000 copies in its first week. On January 5, 2000, it was certified gold by the Recording Industry Association of America, for shipments of 500,000 copies in the United States. As of July 2008, Amplified has sold 675,000 copies in the U.S."
       },
       {
         "amazonUrl": "http://www.amazon.com/The-Renaissance-Q-Tip/dp/B001GRTPKC",
@@ -257,7 +258,8 @@
         "releaseName": "The Renaissance",
         "releaseType": "Album",
         "releaseYear": "2008",
-        "spotifyUrl": "https://play.spotify.com/album/5mGIqZVosIQRNgGZqFY2cz"
+        "spotifyUrl": "https://play.spotify.com/album/5mGIqZVosIQRNgGZqFY2cz",
+        "description": "The Renaissance is the second studio album by American hip hop artist Q-Tip, released November 3, 2008, on Universal Motown Records. The Renaissance was produced primarily by Q-Tip and features guest contributions by D'Angelo, Norah Jones, Amanda Diva, and Raphael Saadiq. The album debuted at number 11 on the U.S. Billboard 200 chart, selling 34,219 copies in its first week. Upon its release, The Renaissance received acclaim from music critics, who praised Q-Tip's production aesthetic and lyricism, and earned him a Grammy Award nomination for Best Rap Album."
       },
       {
         "amazonUrl": "http://www.amazon.com/Kamaal-Abstract-Q-Tip/dp/B002FA150M",
@@ -267,7 +269,8 @@
         "releaseName": "Kamaal/The Abstract",
         "releaseType": "Album",
         "releaseYear": "2009",
-        "spotifyUrl": "https://play.spotify.com/album/2ytFxM5btEGieFNmhY6BZO"
+        "spotifyUrl": "https://play.spotify.com/album/2ytFxM5btEGieFNmhY6BZO",
+        "description": "Kamaal/The Abstract is the third studio album by American hip hop artist Q-Tip, released September 15, 2009, on Battery Records. The album debuted at number 77 on the U.S. Billboard 200 chart, selling 6,000 copies in its first week. Upon its release, Kamaal/The Abstract received positive reviews from most music critics."
       }
     ],
     "stageName": "Q-Tip",
@@ -275,7 +278,7 @@
     "website": "http://qtiponline.com/"
   },
   {
-    "artistImage": "http://i.imgur.com/F4scKqm.jpg",
+    "artistImage": "http://i.imgur.com/GctwXHj.jpg",
     "birthdate": "1982-09-27",
     "birthplace": "New Orleans, Louisiana",
     "cleanUrlName": "lil-wayne",
@@ -289,7 +292,8 @@
         "releaseName": "Tha Block Is Hot",
         "releaseType": "Album",
         "releaseYear": "1999",
-        "spotifyUrl": "https://play.spotify.com/album/75s3OxagI6DX8OKLKymPLN"
+        "spotifyUrl": "https://play.spotify.com/album/75s3OxagI6DX8OKLKymPLN",
+        "description": "Tha Block Is Hot is the debut studio album by Lil Wayne that was released on November 2, 1999 by Cash Money Records. The album debuted at number three on the US Billboard 200 chart, with 229,000 copies sold in its first week released, and over 117,000 copies in its second week. The album was certified Platinum by the Recording Industry Association of America (RIAA) for sales of one million copies in the US, and has sold about 1.3 million copies."
       },
       {
         "amazonUrl": "http://www.amazon.com/Lights-Out-Lil-Wayne/dp/B000053UDL",
@@ -299,7 +303,8 @@
         "releaseName": "Lights Out",
         "releaseType": "Album",
         "releaseYear": "2000",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Lights Out is the second studio album by American rapper Lil Wayne, released December 19, 2000 on Cash Money Records. The album debuted at #16 on Billboard 200 and #2 on the R&B/Hip-Hop Albums charts for sales of 116,000 copies its first week released, and has since been certified Gold by RIAA. As of September 7, 2011, the album has sold 910,218 copies."
       },
       {
         "amazonUrl": "http://www.amazon.com/500-Degreez-Explicit-Version-Wayne/dp/B000V6AEZE",
@@ -309,7 +314,8 @@
         "releaseName": "500 Degreez",
         "releaseType": "Album",
         "releaseYear": "2002",
-        "spotifyUrl": "https://play.spotify.com/album/1bBRCQgqsiAlbWrDZp5tDf"
+        "spotifyUrl": "https://play.spotify.com/album/1bBRCQgqsiAlbWrDZp5tDf",
+        "description": "500 Degreez is the third studio album by American rapper Lil Wayne, released July 23, 2002 on Cash Money Records. The album peaked at number six on the U.S. Billboard 200 chart and peaked at number one on the Billboard Top R&B/Hip Hop Albums chart, with 103,000 copies sold in its first week. The album has been certified gold by the RIAA and, as of September 7, 2011, has sold 584,179 copies."
       },
       {
         "amazonUrl": "http://www.amazon.com/Tha-Carter-Lil-Wayne/dp/B00027JYPI",
@@ -319,7 +325,8 @@
         "releaseName": "Tha Carter",
         "releaseType": "Album",
         "releaseYear": "2004",
-        "spotifyUrl": "https://play.spotify.com/album/5POcKy926GgzFHZpGptJac"
+        "spotifyUrl": "https://play.spotify.com/album/5POcKy926GgzFHZpGptJac",
+        "description": "Tha Carter is the fourth studio album by American rapper Lil Wayne. It was released on June 29, 2004 on Cash Money Records and Universal Records. The album debuted at number five on the US Billboard 200, and number two on the Billboard Top R&B/Hip-Hop Albums chart with 116,000 copies sold in its first week. The album was certified Platinum by the Recording Industry Association of America."
       },
       {
         "amazonUrl": "http://www.amazon.com/Tha-Carter-2-Lil-Wayne/dp/B000BLI4UG",
@@ -329,7 +336,8 @@
         "releaseName": "Tha Carter II",
         "releaseType": "Album",
         "releaseYear": "2005",
-        "spotifyUrl": "https://play.spotify.com/album/0d20RT5sOfbLsBKPCTNx4s"
+        "spotifyUrl": "https://play.spotify.com/album/0d20RT5sOfbLsBKPCTNx4s",
+        "description": "Tha Carter II is the fifth studio album by American rapper Lil Wayne, released on December 6, 2005, by Cash Money, Young Money, and Universal. Upon its release, Tha Carter II received generally favorable reviews from music critics, who complimented its musical progression from his previous albums. The album peaked at number two on the U.S. Billboard 200 for first week sales of over 254,000 copies."
       },
       {
         "amazonUrl": "http://www.amazon.com/Like-Father-Son-Birdman/dp/B000HT35SS",
@@ -339,7 +347,8 @@
         "releaseName": "Like Father, Like Son",
         "releaseType": "Album",
         "releaseYear": "2006",
-        "spotifyUrl": "https://play.spotify.com/album/0riHF8KigcDZdKmUsZXEeo"
+        "spotifyUrl": "https://play.spotify.com/album/0riHF8KigcDZdKmUsZXEeo",
+        "description": "Like Father, Like Son is a collaborative studio album by Birdman and Lil Wayne. The album was released on October 31, 2006, through Cash Money Records and Universal Records. Like Father, Like Son debuted at number three on the Billboard 200 chart with 176,000 copies sold in its first week. As of July 11, 2007, it has sold 761,958 copies in the United States."
       },
       {
         "amazonUrl": "http://www.amazon.com/Tha-Carter-III-Lil-Wayne/dp/B001E4IY3Q",
@@ -349,7 +358,8 @@
         "releaseName": "Tha Carter III",
         "releaseType": "Album",
         "releaseYear": "2008",
-        "spotifyUrl": "https://play.spotify.com/album/1Do3y8IAcbYOToYQJnGwSO"
+        "spotifyUrl": "https://play.spotify.com/album/1Do3y8IAcbYOToYQJnGwSO",
+        "description": "Tha Carter III is the sixth studio album by American rapper Lil Wayne, released on June 10, 2008, by Cash Money and Universal Motown. Amid release delays and leaks, Tha Carter III became one of the most anticipated releases of 2008. The album debuted at number one on the US Billboard 200 chart, selling 1,005,545 copies in its first week. It reached sales of 2.88 million copies by the end of 2008 and produced four singles that achieved chart success. Tha Carter III received acclaim from music critics upon its release and earned Lil Wayne several accolades. It has been certified triple-platinum by the Recording Industry Association of America and has sold 3.6 million copies in the United States."
       },
       {
         "amazonUrl": "http://www.amazon.com/Rebirth-Lil-Wayne/dp/B001TD1XWG",
@@ -359,7 +369,8 @@
         "releaseName": "Rebirth",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": "https://play.spotify.com/album/2ydmGsz8W6qDq2UgotdxzR"
+        "spotifyUrl": "https://play.spotify.com/album/2ydmGsz8W6qDq2UgotdxzR",
+        "description": "Rebirth is the seventh studio album by American rapper Lil Wayne, released February 2, 2010, on Cash Money Records, Young Money Entertainment and Universal Motown. The album debuted at number two on the US Billboard 200 chart, selling 176,000 copies in its first week. It became Wayne's seventh top-ten album in the United States and produced four singles that attained Billboard chart success. Upon its release, Rebirth received generally negative reviews from most music critics. It has been certified gold in sales by the Recording Industry Association of America, with domestic shipment of 500,000 copies."
       },
       {
         "amazonUrl": "http://www.amazon.com/Am-Not-Human-Being/dp/B00437DYLI",
@@ -369,7 +380,8 @@
         "releaseName": "I Am Not a Human Being",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": "https://play.spotify.com/album/6Pqlfg42Sc3ElNuyt5NUiK"
+        "spotifyUrl": "https://play.spotify.com/album/6Pqlfg42Sc3ElNuyt5NUiK",
+        "description": "I Am Not a Human Being is the eighth studio album by American rapper Lil Wayne. Upon its release, I Am Not a Human Being received generally favorable reviews from music critics, who drew comparisons to Wayne's earlier work. The album debuted at number two on the U.S. Billboard 200, based on its first-week digital sales alone. Following its physical release, it topped the chart, becoming Lil Wayne's second US number-one album and the first studio album since Tupac Shakur's Me Against the World in 1995 to reach the top slot on the Billboard 200 while its artist was jailed. The album has been certified Gold by the Recording Industry Association of America."
       },
       {
         "amazonUrl": "http://www.amazon.com/Tha-Carter-IV-Lil-Wayne/dp/B004R0MF0W",
@@ -379,7 +391,8 @@
         "releaseName": "Tha Carter IV",
         "releaseType": "Album",
         "releaseYear": "2011",
-        "spotifyUrl": "https://play.spotify.com/album/7oc6i8xUILaWwQ5BJMZS3c"
+        "spotifyUrl": "https://play.spotify.com/album/7oc6i8xUILaWwQ5BJMZS3c",
+        "description": "Tha Carter IV is the ninth studio album by American rapper Lil Wayne, released on August 29, 2011 through Young Money Entertainment, Cash Money Records and Universal Republic Records. Tha Carter IV achieved first week sales of 964,000 copies in the United States and became Lil Wayne's second album to top the US Billboard 200 in its first week. The album received generally mixed reviews from music critics, who were divided in their responses towards the album's production and Wayne's own performances on the album: they felt it a disappointment compared to his previous work."
       },
       {
         "amazonUrl": "http://www.amazon.com/Am-Not-Human-Being-II/dp/B00BDZV9M4",
@@ -389,7 +402,8 @@
         "releaseName": "I Am Not a Human Being II",
         "releaseType": "Album",
         "releaseYear": "2013",
-        "spotifyUrl": "https://play.spotify.com/album/6Pqlfg42Sc3ElNuyt5NUiK"
+        "spotifyUrl": "https://play.spotify.com/album/6Pqlfg42Sc3ElNuyt5NUiK",
+        "description": "I Am Not a Human Being II is the tenth studio album by American rapper Lil Wayne, released on March 26, 2013 in the US, by Young Money Entertainment, Cash Money Records, and Republic Records. Upon its release, the album received generally mixed reviews from music critics, who criticized its production and panned Wayne's lyrics. The album debuted at number two on the Billboard 200 with 217,000 copies sold in its first week. As of July 30, 2013 the album has sold 529,000 copies in the United States."
       },
       {
         "amazonUrl": "",
@@ -399,7 +413,8 @@
         "releaseName": "Da Drought",
         "releaseType": "Mixtape",
         "releaseYear": "2003",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Da Drought is an official mixtape by Lil Wayne, which was released in 2003. There are a total of 12 tracks on the tape and it is the first mixtape in the Da Drought trilogy."
       },
       {
         "amazonUrl": "",
@@ -409,7 +424,8 @@
         "releaseName": "Da Drought 2",
         "releaseType": "Mixtape",
         "releaseYear": "2004",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Da Drought 2 is an official mixtape by Lil Wayne, which was released in 2004. There are a total of 15 tracks on the tape and it is the second mixtape in the Da Drought trilogy."
       },
       {
         "amazonUrl": "",
@@ -419,7 +435,8 @@
         "releaseName": "The Prefix",
         "releaseType": "Mixtape",
         "releaseYear": "2004",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "The Prefix is an official mixtape by Lil Wayne, which was released in 2004 with a total of 13 tracks."
       },
       {
         "amazonUrl": "",
@@ -429,7 +446,8 @@
         "releaseName": "The Suffix",
         "releaseType": "Mixtape",
         "releaseYear": "2005",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "The Suffix is an official mixtape by Lil Wayne hosted by DJ Khaled. The tape was released in 2005 with a total of 18 tracks"
       },
       {
         "amazonUrl": "",
@@ -439,7 +457,8 @@
         "releaseName": "The Dedication",
         "releaseType": "Mixtape",
         "releaseYear": "2005",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "The Dedication is a mixtape by DJ Drama and Lil Wayne released December 13, 2005. It is the first mixtape in the Dedication/Gangsta Grillz Tetralogy and it was produced and hosted by DJ Drama. The mixtape was given its name because as Wayne explains in the track Intro, it is dedicated to everyone around the world and to the fallen soldiers. The mixtape currently holds a rating of 5 stars (based on over 500 ratings) on DatPiff and has generated over 200,000 downloads. The mixtape has been described as a classic among Wayne fans."
       },
       {
         "amazonUrl": "",
@@ -449,7 +468,8 @@
         "releaseName": "Dedication 2",
         "releaseType": "Mixtape",
         "releaseYear": "2006",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Dedication 2 is a 2006 mixtape by DJ Drama and Lil Wayne. It is a sequel to Lil Wayne's previous mixtape, The Dedication, and is second in DJ Drama's Gangsta Grillz series with Lil Wayne. It is one of the few mixtapes in the hip hop genre to be both financially successful and critically acclaimed. Despite its illegal use of unlicensed instrumentals and samples, it is sold through iTunes and retail stores such as Best Buy and FYE, widely reviewed in the mainstream media, and even though a mixtape that almost only exclusively sold digitally it peaked at #69 on Billboard's 'Top R&B/Hip-Hop Albums' chart."
       },
       {
         "amazonUrl": "",
@@ -459,7 +479,8 @@
         "releaseName": "Da Drought 3",
         "releaseType": "Mixtape",
         "releaseYear": "2007",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Da Drought 3 is a two-disc mixtape by Lil Wayne, released on April 13, 2007 and is the third in the trilogy of mixtapes in Da Drought series. Da Drought 3 was hailed as the best mixtape of 2007 by MTV News. Lil Wayne was officially named The 'Hottest MC' by their hip hop brain trust. The album was #27 on Rolling Stone's list of the Top 50 Albums of 2007. Online music magazine Pitchfork Media placed Da Drought 3 at number 99 on their list of top 200 albums of the 2000s."
       },
       {
         "amazonUrl": "",
@@ -469,7 +490,8 @@
         "releaseName": "Dedication 3",
         "releaseType": "Mixtape",
         "releaseYear": "2008",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Dedication 3 is a mixtape by DJ Drama and Lil Wayne. It is the sequel to its predecessors, The Dedication and the highly successful Dedication 2, becoming the third in Lil Wayne's Gangsta Grillz tetralogy. Although Dedication 3 was a major success, it failed to match that of its predecessors but did gain some attention. The mixtape has sold over 70,000 copies in the United States, despite being available for free download. Besides the interludes, a majority of the mixtape has Wayne using auto-tune and rapping alongside artists signed to his label, Young Money Entertainment."
       },
       {
         "amazonUrl": "",
@@ -479,7 +501,8 @@
         "releaseName": "No Ceilings",
         "releaseType": "Mixtape",
         "releaseYear": "2009",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "No Ceilings is a mixtape by rap artist Lil Wayne. It was scheduled to be released on October 31, 2009, but was leaked before the official date. No Ceilings was officially released on October 31 (Halloween), with 4 additional tracks. The mixtape is available as a free and legal download."
       },
       {
         "amazonUrl": "",
@@ -489,7 +512,8 @@
         "releaseName": "Sorry 4 the Wait",
         "releaseType": "Mixtape",
         "releaseYear": "2011",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Sorry 4 the Wait is a mixtape by rapper Lil Wayne, named Sorry 4 the Wait as an attempt to apologize for the continued delay of his ninth album Tha Carter IV. Wayne said the mixtape would have about 10 songs and be similar to No Ceilings, with him using other artists' tracks and making a cover track. It was released for digital download on July 13, 2011."
       },
       {
         "amazonUrl": "",
@@ -499,7 +523,8 @@
         "releaseName": "Dedication 4",
         "releaseType": "Mixtape",
         "releaseYear": "2012",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Dedication 4 is a mixtape by Lil Wayne. The mixtape was originally supposed to be released on August 15, 2012, but got pushed several times and was released on September 3, 2012. It is the fourth installment of Lil Wayne's Dedication series, following its predecessors The Dedication, Dedication 2 and Dedication 3. It's also the fourth installment of Lil Wayne's Gangsta Grillz tetralogy."
       },
       {
         "amazonUrl": "",
@@ -509,7 +534,8 @@
         "releaseName": "Dedication 5",
         "releaseType": "Mixtape",
         "releaseYear": "2013",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "Dedication 5 is a mixtape by Lil Wayne, released on September 1, 2013. It is the fifth installment of Lil Wayne's Dedication series, following its predecessors The Dedication, Dedication 2, Dedication 3 and Dedication 4. It's also the fifth installment of Lil Wayne's Gangsta Grillz Pentalogy. "
       }
     ],
     "stageName": "Lil Wayne",
@@ -531,7 +557,8 @@
         "releaseName": "Man on the Moon",
         "releaseType": "Album",
         "releaseYear": "2009",
-        "spotifyUrl": "https://play.spotify.com/album/6oPPKtAwNNlkW4wwHfQDfM"
+        "spotifyUrl": "https://play.spotify.com/album/6oPPKtAwNNlkW4wwHfQDfM",
+        "description": "Man on the Moon: The End of Day is the debut studio album by American hip hop recording artist Kid Cudi, released on September 14, 2009, by Dream On, GOOD Music, and Universal Motown. The album debuted at number four on both the US Billboard 200 and Billboard Top Rap Albums chart, selling 104,000 copies in its first week of release in the United States. It later became certified Gold by the Recording Industry Association of America (RIAA), for shipments exceeding 500,000 copies in the US. Outside of the US, the album was less commercially successful, generally peaking outside of the top fifty positions of album charts."
       },
       {
         "amazonUrl": "http://www.amazon.com/Man-On-The-Moon-Legend/dp/B003P2VGN0",
@@ -541,7 +568,8 @@
         "releaseName": "Man on the Moon II",
         "releaseType": "Album",
         "releaseYear": "2010",
-        "spotifyUrl": "https://play.spotify.com/album/08eM9GRdr5BCCHNqS3Wwud"
+        "spotifyUrl": "https://play.spotify.com/album/08eM9GRdr5BCCHNqS3Wwud",
+        "description": "Man on the Moon II: The Legend of Mr. Rager is the second studio album by American recording artist Kid Cudi, released November 9, 2010 under GOOD Music and Universal Motown. The album debuted at number three on the US Billboard 200 chart, selling 169,000 copies during its first week of release. Upon its release, it received generally positive reviews from music critics. On July 26, 2012, it was certified gold by the Recording Industry Association of America, for shipments of 500,000 copies in the United States."
       },
       {
         "amazonUrl": "",
@@ -551,7 +579,8 @@
         "releaseName": "A Kid Named Cudi",
         "releaseType": "Mixtape",
         "releaseYear": "2008",
-        "spotifyUrl": ""
+        "spotifyUrl": "",
+        "description": "A Kid Named Cudi is a mixtape by Cleveland, OH rapper Kid Cudi released on July 17, 2008. It was produced by Plain Pat and Emile. It has received critical acclaim and features the hit single “Day ‘n’ Nite”. It features Washington, D.C. rapper Wale and Cleveland, Ohio rapper Chip Tha Ripper."
       },
       {
         "amazonUrl": "http://www.amazon.com/Indicud-Kid-Cudi/dp/B00BYISRBG",
@@ -561,7 +590,8 @@
         "releaseName": "Indicud",
         "releaseType": "Album",
         "releaseYear": "2013",
-        "spotifyUrl": "https://play.spotify.com/album/262o5a05pMUDSV2uzo5EwQ"
+        "spotifyUrl": "https://play.spotify.com/album/262o5a05pMUDSV2uzo5EwQ",
+        "description": "Indicud is the third studio album by American hip hop recording artist Kid Cudi. The album was released on April 16, 2013 under Wicked Awesome Records, GOOD Music and Republic Records. It was the first album of Cudi's solo career to not be an installment of his Man on the Moon series. Indicud debuted at #2 in the US with sales of 140,000 copies and debuted at number 32 on the UK Albums Chart, becoming Cudi's highest-charting album on the chart, while entering at number 2 on the UK R&B Chart. The album received mixed to positive reviews from the majority of music critics upon its release."
       }
     ],
     "stageName": "Kid Cudi",
