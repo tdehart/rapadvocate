@@ -40,4 +40,7 @@ Template.artists.rendered = function() {
     });
   });
 
+  //In case a user presses back while in a modal
+  $(".modal-backdrop").remove();
+
 };

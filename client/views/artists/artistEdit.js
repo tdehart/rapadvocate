@@ -1,3 +1,7 @@
+Template.artistEdit.rendered = function() {
+  $(".modal-backdrop").remove();
+};
+
 Template.artistEdit.events({
   'click .cancel-button': function(evt, tmpl) {
     evt.preventDefault();

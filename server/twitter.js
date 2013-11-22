@@ -39,7 +39,6 @@ Meteor.startup(function() {
           console.log("Error", err);
         }
         _.each(tweets, function(tweet) {
-          console.log(tweet);
           var tweetTime = tweet.created_at;
           var time = moment(new Date(tweetTime)).fromNow();
           data = {

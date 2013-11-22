@@ -1,8 +1,6 @@
 <template name="artistShow">
   <div class="row">
-    {{#constant}}
-      {{>artistDetails}}
-    {{/constant}}
+    {{>artistDetails}}
 
     {{#if $.Session.equals 'rankingTemplate' 'allRanks'}}
       {{>allRankings}}
@@ -25,6 +23,7 @@
           edit
         </a>
         {{/if}}
+        
       </div>
       <div class="panel-body">
         <ul class="list-unstyled">
@@ -140,7 +139,7 @@
 <template name="twitterFeed">
   <div class="col-lg-4 artist-column">
     <h3>Twitter 
-      <a href="http://twitter.com/{{artist.twitterUsername}}">
+      <a href="http://twitter.com/{{artist.twitterUsername}}" target="_blank">
         @{{artist.twitterUsername}}
       </a>
     </h3>
