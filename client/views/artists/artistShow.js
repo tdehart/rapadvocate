@@ -68,6 +68,7 @@ Template.artistShow.events({
   'click .save-ranks-button': function(evt, tmpl) {
     evt.preventDefault();
     Session.set('rankingTemplate', 'allRanks');
+    Session.set('refreshMasonry', true);
 
     var releases = [];
     $(".my-ranks-list li").each(function(index, element) {

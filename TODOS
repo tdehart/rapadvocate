@@ -16,3 +16,7 @@ TODOS
 -Releases with multiple artists (e.g., Watch the Throne)
 -Similar artists
 -Write a ranking plugin (Borda count)
+
+
+-Make login not reactive and more robust
+-Modal is wrong sometimes?

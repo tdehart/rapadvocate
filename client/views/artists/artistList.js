@@ -23,6 +23,7 @@ Template.artists.events({
 
 Template.artist.rendered = function() {
   var finished = Session.get('doAddAnimation');
+
   if (finished) {
     $("li:last").hide().slideDown();
   }
@@ -31,16 +32,17 @@ Template.artist.rendered = function() {
 };
 
 Template.artists.rendered = function() {
-  var $container = $('#masonry-container');
-  // initialize
+  $container = $('#masonry-container');
+  
   $container.imagesLoaded(function() {
     $container.masonry({
       columnWidth: 60,
       itemSelector: '.masonry-item'
     });
+
+    $container.masonry('reloadItems');
   });
 
   //In case a user presses back while in a modal
   $(".modal-backdrop").remove();
-
 };
