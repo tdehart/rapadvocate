@@ -51,9 +51,10 @@
     position:relative;
     list-style: none;
     background-color: #32383e;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 0px 5px 15px;
     margin-bottom: -1px;
-    border: 1px solid rgba(0, 0, 0, 0.6);    
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
   }
   ol > li:before {
     content: counter(li);
@@ -90,6 +91,51 @@
   li:last-child {
     border-bottom-right-radius: 4px;
   }
+
+  .release-name {
+    width: 85%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .release-icon {
+    float: right;
+    position: relative;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+      filter: alpha(opacity=40);
+    }
+  }
+
+  .all-ranks-item {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+      filter: alpha(opacity=80);
+    }
+
+    &:active {
+      opacity: 0.4;
+      filter: alpha(opacity=40);
+    }
+  }
+
+  .Album {
+    background: transparent url('/Album1.png') no-repeat center center;
+    background-size: 32px;
+  }
+
+  .Mixtape {
+    background: transparent url('/Mixtape2.png') no-repeat center center;
+    background-size: 50px;
+  }
 }
 
 .alert-success {
@@ -103,7 +149,6 @@
 }
 
 .artist-column {
-  margin-left: 48px;
 
   .btn-warning {
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#D1881F), color-stop(60%, #C27F1F), to(#D4891D));
@@ -123,6 +168,22 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff804d03', endColorstr='#ffb26a04', GradientType=0);
   }
 }
+/* Large desktop */
+@media (min-width: 1200px) { 
+  .artist-column {
+    margin-left: 48px;  
+  }
+}
+
+@media (max-width: 480px) { 
+  .release-icon.Album, .release-icon.Mixtape {
+    display: none;
+  }
+
+  .all-rankings .release-name {
+    width: 100%;
+  }
+}
 
 .tweet {
   padding-bottom: 20px;
@@ -132,20 +193,7 @@
   color: #7a8288;
 }
 
-.release-icon {
-  float: right;
-  position: relative;
-  top: -10px;
-  right: -6px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
 
-  &:hover {
-    opacity: 0.7;
-    filter: alpha(opacity=40);
-  }
-}
 
 .my-ranks-list {
   .list-group {
@@ -166,30 +214,6 @@
       filter: alpha(opacity=100);
     }
   }  
-}
-
-.all-ranks-item {
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-  }
-
-  &:active {
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-  }
-}
-
-.Album {
-  background: transparent url('/Album1.png') no-repeat center center;
-  background-size: 32px;
-}
-
-.Mixtape {
-  background: transparent url('/Mixtape2.png') no-repeat center center;
-  background-size: 50px;
 }
 
 .modal {

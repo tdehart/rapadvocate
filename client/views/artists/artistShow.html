@@ -62,9 +62,10 @@
     <ol class="all-ranks-list">
     {{#each artist.releases}}
     <li class="all-ranks-item" data-toggle="modal" data-target="#release-{{rank}}-modal">
-      {{releaseName}}
-      <span class="text-muted">({{releaseYear}})</span>
-      <div class="release-icon {{releaseType}}" data-toggle="tooltip"></div>
+      <ul class="list-inline release-row">
+        <li class="release-name">{{releaseName}} <span class="text-muted">({{releaseYear}})</span></li>
+        <li class="release-icon {{releaseType}}" data-toggle="tooltip"></li>
+      </ul>
     </li>
 
     <div class="modal fade" id="release-{{rank}}-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
