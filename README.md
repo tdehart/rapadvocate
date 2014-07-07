@@ -2,6 +2,8 @@ RapAdvocate
 =====================
 Browse and collaboratively manage rap artists' mixtapes and discographies.
 
+demo: http://pacific-everglades-3520.herokuapp.com/
+
 ## How to run
 ###Install Meteor & Meteorite
 ```
